@@ -19,13 +19,13 @@ body{
     width: 100%;
     height: 60px;
 
-    background-color: #231D23;
-    backdrop-filter: blur(0.5);
-
     display: flex;
     align-self: center;
     align-items: center;
     align-content: center;
+
+    box-shadow: 0px 0px 100px 0px rgb(110, 107, 111, 0.5);
+    background-color: #231D23;
 }
 .menuContent{
     height: 100%;
@@ -108,7 +108,7 @@ body{
 
 
 
-.searchMenu{
+/*.searchMenu{
     width: 100%;
     height: 100px;
 
@@ -170,16 +170,40 @@ body{
 
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-}
+}*/
+
+
+
 
 
 .col{
     width: 50%;
 }
 
+.slider-section{
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
+
+.slider{
+    z-index: 1;
+}
+
 .slider-title{
     font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 15px;
+
+    z-index: 2;
+
+    margin-bottom: 20px;
 
     color: white;
 }
@@ -202,13 +226,85 @@ body{
 
     display: flex;
 
+    box-shadow: 50px 0 30px -1px rgba(44, 37, 45, 0.8), -50px 0 30px -1px rgba(44, 37, 45, 0.8);
     background-color: #231D23;
 }
+
+.left-slider{
+    width: 250px;
+    height: 400px;
+
+    margin-top: 40px;
+
+    display: flex;
+    align-items: flex-end;
+
+    background-image: url("imgs/backgrounds/main-slider/assassins-creed.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center left 15%;
+}
+.left-game-title{
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    background-image: linear-gradient(to top, black 0%, rgb(0, 0, 0, 0.7) 50%, rgb(0, 0, 0, 0) 100%);
+}
+.left-slider h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+
+    text-align: right;
+
+    color: white;
+}
+
+.right-slider{
+    width: 250px;
+    height: 400px;
+
+    margin-top: 40px;
+
+    display: flex;
+    align-items: flex-end;
+
+    background-image: url("imgs/backgrounds/main-slider/red-dead-redemption.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70%;
+}
+.right-game-title{
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    background-image: linear-gradient(to top, black 0%, rgb(0, 0, 0, 0.7) 50%, rgb(0, 0, 0, 0) 100%);
+}
+.right-game-title h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+
+    text-align: right;
+
+    color: white;
+}
+
 .image-col{
     width: 60%;
     height: 100%;
 
-    background-image: url("imgs/backgrounds/twd.jpg");
+    background-image: url("imgs/backgrounds/main-slider/twd.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center right;
@@ -349,4 +445,274 @@ body{
 
     position: absolute;
     right: 10px;
+}
+
+
+
+
+.special-offers-section{
+    width: 100%;
+    height: 700px;
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
+
+.special-offers-container{
+    position: relative;
+}
+
+.special-offers-title{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    margin-bottom: 20px;
+
+    color: white;
+}
+
+.special-offers{
+    width: 1200px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.offer-1{
+    width: 400px;
+    height: 400px;
+
+    margin-right: 20px;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+
+    background-image: url("imgs/backgrounds/special-offers/forza-horizon-5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.offer-detail{
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+
+    background-color: #231D23;
+}
+
+.offer-title{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+
+    margin-left: 20px;
+
+    color: #00AEEF;
+}
+
+.offer-sale-price{
+    width: 50px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: 90px;
+
+    background-color: #C1E45D;
+}
+.offer-sale-price h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    
+    color: black;
+}
+
+.price{
+    height: 100%;
+
+    position: absolute;
+    right: 20px;
+
+    text-align: right;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.old-price{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+
+    text-decoration: line-through;
+
+    color: #6E6B6F;
+}
+.new-price{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+    color: white;
+}
+
+
+.offer-2{
+    width: 400px;
+    height: 400px;
+
+    margin-right: 20px;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+
+    background-image: url("imgs/backgrounds/special-offers/dead-rising-4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.offer-2-message{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+
+    position: absolute;
+    right: 80px;
+
+    color: #6E6B6F;
+}
+
+.offer-2-sale-price{
+    width: 50px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: 20px;
+
+    background-color: #C1E45D;
+}
+.offer-2-sale-price h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    
+    color: black;
+}
+
+
+
+.offer-3{
+    width: 400px;
+    height: 400px;
+
+    margin-right: 20px;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+
+    background-image: url("imgs/backgrounds/special-offers/borderlands-3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.offer-4{
+    width: 400px;
+    height: 400px;
+
+    margin-right: 20px;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+
+    background-image: url("imgs/backgrounds/special-offers/watch-dogs-legion.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.offer-5{
+    width: 400px;
+    height: 400px;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+
+    background-image: url("imgs/backgrounds/special-offers/back-for-blood.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.pass-offer-slide-button{
+    width: 100px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-image: linear-gradient(to left, #2C252D 0, rgb(44, 37, 45, 0.6) 50%, rgb(44, 37, 45, 0) 100%);
+}
+.pass-offer-slide-button button{
+    width: 80px;
+    height: 70px;
+
+    margin-top: 0.5px;
+
+    border: 0;
+
+    font-size: 20px;
+
+    transition: 0.3s;
+
+    color: #6E6B6F;
+    background-color: #231D23;
+}
+.pass-offer-slide-button button:hover{
+    border: 3px;
+    border-style: solid;
+    border-color: #231D23;
+
+    transition: 0.3s;
+
+    color: #231D23;
+    background-color: white;
 }
