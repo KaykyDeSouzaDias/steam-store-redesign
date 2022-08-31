@@ -1,0 +1,326 @@
+.recommended-section {
+    width: 100%;
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
+
+.recommended-container {
+    position: relative;
+}
+
+.recommended-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+
+    margin-bottom: 20px;
+
+    color: white;
+}
+
+.recommended {
+    width: 1200px;
+    height: 450px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recommended-line-1 {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0px;
+    padding-inline-start: 0;
+
+    position: relative;
+}
+
+.recommended-line-2 {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0px;
+    padding-inline-start: 0;
+}
+
+.recommended-games {
+    width: 280px;
+    height: 200px;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -10px;
+
+    transition: 0.3s;
+}
+
+.recommended-games:hover {
+    z-index: 1;
+    transform: scale(1.3);
+
+    transition: 0.3s;
+}
+
+.recommended-games:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -10px;
+
+    opacity: 0;
+
+    transition: 0.3s;
+}
+
+
+.recommended-games-detail-overlay {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+
+    background-color: #231D23;
+}
+
+
+#recommended-game-icon-review-01 {
+    font-size: 24px;
+
+    color: #39CB87;
+
+    position: absolute;
+    bottom: 80px;
+    right: 10px;
+}
+
+
+.recommended-buy {
+    width: 55px;
+    height: 35px;
+
+    border: none;
+    border-radius: 5px;
+
+    margin-right: 8px;
+    margin-left: 15px;
+
+    font-size: 20px;
+
+    color: #6E6B6F;
+    background-color: #2C252D;
+}
+
+.recommended-wishlist {
+    width: 40px;
+    height: 35px;
+
+    border: none;
+    border-radius: 5px;
+
+    margin-right: 8px;
+
+    font-size: 20px;
+
+    color: #6E6B6F;
+    background-color: #2C252D;
+}
+
+
+
+
+
+.recommended-games-detail {
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+
+    background-color: #231D23;
+}
+
+.recommended-games-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+
+    margin-left: 20px;
+
+    color: #00AEEF;
+}
+
+.recommended-games-similar p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+
+    margin-left: 15px;
+
+    color: #6E6B6F;
+}
+
+.recommended-games-similar h3 {
+    width: 120px;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+
+    margin-left: 15px;
+
+    color: #6E6B6F;
+}
+
+
+
+.recommended-sale-price {
+    width: 40px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    right: 90px;
+
+    background-color: #C1E45D;
+}
+
+.recommended-sale-price h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+
+    color: black;
+}
+
+.recommended-games-price {
+    height: 100%;
+
+    position: absolute;
+    right: 20px;
+
+    text-align: right;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.recommended-old-price {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+
+    text-decoration: line-through;
+
+    color: #6E6B6F;
+}
+
+.recommended-new-price {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+    color: white;
+}
+
+.recommended-normal-price {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+    color: white;
+}
+
+
+.steam-labs-container {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #2A2C38;
+}
+
+.steam-labs-text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+    color: white;
+}
+
+.steam-labs-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+    color: #00AEEF;
+}
+
+.steam-labs-container button {
+    width: 110px;
+    height: 50px;
+
+    margin-left: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+
+    border: 2px #393C46;
+    border-radius: 5px;
+    border-style: solid;
+
+    background-color: #353841;
+    color: white;
+}
+
+.steam-labs-container button i {
+    margin-top: 3px;
+    margin-left: 5px;
+}

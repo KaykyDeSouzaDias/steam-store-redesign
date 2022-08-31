@@ -1,0 +1,100 @@
+.header {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.menu {
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+
+    box-shadow: 0px 0px 100px 0px rgb(110, 107, 111, 0.5);
+    background-color: #231D23;
+}
+
+.menuContent {
+    height: 100%;
+    float: none;
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+
+    background: none;
+
+    display: flex;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
+
+.menuContent a {
+    background: none;
+}
+
+
+.logo {
+    width: 100px;
+    height: 30px;
+
+    background: none;
+}
+
+.mainBtns {
+    padding-left: 10px;
+    padding-right: 50px;
+    display: flex;
+    background: none;
+}
+
+.steamOptions {
+    font-size: small;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+
+    color: white;
+
+    padding: 15px;
+}
+
+.storeCart {
+    padding: 30px;
+    color: white;
+}
+
+.loginBtn {
+    font-size: small;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+
+    color: white;
+
+    padding: 8px;
+}
+
+.downloadBtn {
+    width: 100px;
+    height: 40px;
+    background: none;
+
+    font-size: medium;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+
+    color: #C1E45D;
+
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #C1E45D;
+}
