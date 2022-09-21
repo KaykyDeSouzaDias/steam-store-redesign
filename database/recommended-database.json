@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "image": "imgs/backgrounds/recommended/the-witcher-3.png",
+        "name": "The Witcher 3",
+
+        "review": "Very Positive",
+
+        "similarTo": "Elden Ring",
+        "gameKeywords": ["RPG", "Open World", "Good Plot", "Atmospheric"],
+        "gameCategoryType": "",
+
+        "actual_price": "79,99",
+        "old_price": "15,99",
+        "isInOffer": true,
+        "dealOffer": "-80"
+    },
+    {
+        "id": 2,
+        "image": "imgs/backgrounds/recommended/yakuza.png",
+        "name": "Yakuza: Like a dragon",
+
+        "review": "",
+
+        "similarTo": "Grand Theft Auto 5",
+        "gameKeywords": ["RPG", "Adventure", "Action", "JRPG"],
+        "gameCategoryType": "",
+
+        "actual_price": "249,90",
+        "old_price": "",
+        "isInOffer": false,
+        "dealOffer": ""
+    },
+    {
+        "id": 3,
+        "image": "imgs/backgrounds/recommended/shadow-of-war.png",
+        "name": "Middle-Earth: Shadow of war",
+
+        "review": "",
+
+        "similarTo": "Sekiro: Shadows die twice",
+        "gameKeywords": ["Open World", "Action", "RPG", "Fantasy"],
+        "gameCategoryType": "",
+
+        "actual_price": "229,90",
+        "old_price": "",
+        "isInOffer": false,
+        "dealOffer": ""
+    },
+    {
+        "id": 4,
+        "image": "imgs/backgrounds/recommended/sekiro.png",
+        "name": "Sekiro: shadows die twice",
+
+        "review": "",
+
+        "similarTo": "Elden Ring",
+        "gameKeywords": ["Soulslike", "Hard", "Action", "Ninja"],
+        "gameCategoryType": "",
+
+        "actual_price": "199,90",
+        "old_price": "",
+        "isInOffer": false,
+        "dealOffer": ""
+    },
+    {
+        "id": 5,
+        "image": "imgs/backgrounds/recommended/ori.png",
+        "name": "Ori and the Blind Forest",
+
+        "review": "",
+
+        "similarTo": "Hollow Knight",
+        "gameKeywords": ["Atmospheric", "Good Soundtrack", "Metroidvania", "2D"],
+        "gameCategoryType": "",
+
+        "actual_price": "59,00",
+        "old_price": "",
+        "isInOffer": false,
+        "dealOffer": ""
+    },
+    {
+        "id": 6,
+        "image": "imgs/backgrounds/recommended/gears-5.png",
+        "name": "Gears 5",
+
+        "review": "",
+
+        "similarTo": "Days Gone",
+        "gameKeywords": ["Action", "Adventure", "Shooting", "Shooting in Third Person"],
+        "gameCategoryType": "",
+
+        "actual_price": "249,00",
+        "old_price": "82,17",
+        "isInOffer": true,
+        "dealOffer": "-67"
+    },
+    {
+        "id": 7,
+        "image": "imgs/backgrounds/recommended/final-fantasy.png",
+        "name": "Final Fantasy",
+
+        "review": "",
+
+        "similarTo": "God of War",
+        "gameKeywords": ["RPG", "Open World", "JRPG", "Fantasy"],
+        "gameCategoryType": "",
+
+        "actual_price": "125,00",
+        "old_price": "62,50",
+        "isInOffer": true,
+        "dealOffer": "-50"
+    },
+    {
+        "id": 8,
+        "image": "imgs/backgrounds/recommended/destiny-2.png",
+        "name": "Destiny 2",
+
+        "review": "",
+
+        "similarTo": "Warframe",
+        "gameKeywords": ["Free to play", "Open World", "MMORPG", "Cooperative"],
+        "gameCategoryType": "",
+
+        "actual_price": "Free",
+        "old_price": "",
+        "isInOffer": false,
+        "dealOffer": ""
+    }
+]

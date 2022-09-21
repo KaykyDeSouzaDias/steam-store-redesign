@@ -1,0 +1,122 @@
+[
+  {
+    "image": "imgs/backgrounds/whats-popular_promoted/age-of-empires-2.png",
+    "name": "Age of Empires 2",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": ["Strategy", "RTS", "Tactic", "Multiplayer"],
+    "gameCategoryType": "",
+
+    "actual_price": "36,99",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/whats-popular_promoted/gears-tactics.png",
+    "name": "Gears Tactics",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": ["Strategy", "By Turns", "Tactic", "RPG"],
+    "gameCategoryType": "",
+
+    "actual_price": "199,00",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/whats-popular_promoted/halo-infinite.png",
+    "name": "Halo Infinite",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": ["Free to Play", "FPS", "Multiplayer", "Action"],
+    "gameCategoryType": "",
+
+    "actual_price": "Free",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/whats-popular_promoted/psychonauts-2.png",
+    "name": "Psychonauts 2",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": ["Good Plot", "3D Platform", "Comedy", "Psychological"],
+    "gameCategoryType": "",
+
+    "actual_price": "249,00",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/whats-popular_promoted/rocket-arena.png",
+    "name": "Rocket Arena",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": ["Action", "Competitive", "PVP", "Multiplayer"],
+    "gameCategoryType": "",
+
+    "actual_price": "29,00",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/whats-popular_promoted/squadrons.png",
+    "name": "Star Wars: Squadrons",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": ["Multiplayer", "RV", "One Player", "Flight"],
+    "gameCategoryType": "",
+
+    "actual_price": "199,00",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/whats-popular_promoted/the-outer-worlds.png",
+    "name": "The Outer Worlds",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": ["Open World", "Action RPG", "RPG", "Exploration"],
+    "gameCategoryType": "",
+
+    "actual_price": "249,90",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/whats-popular_promoted/thronebreaker.png",
+    "name": "Thronebreaker: The Witcher Tales",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": ["RPG", "Adventure", "Cards", "Good Plot"],
+    "gameCategoryType": "",
+
+    "actual_price": "55,99",
+    "old_price": "16,79",
+    "isInOffer": true,
+    "dealOffer": "-70"
+  }
+]

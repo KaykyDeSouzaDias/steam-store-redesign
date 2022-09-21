@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="css/special-offers-slider.css">
     <link rel="stylesheet" href="css/recommended.css">
     <link rel="stylesheet" href="css/whats-popular-promoted.css">
+    <link rel="stylesheet" href="css/your-top-categories.css">
     <script src="https://kit.fontawesome.com/0fb81c7629.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <title>Steam redesign clone</title>
 
@@ -68,7 +71,7 @@
                 <div class="main-slider">
 
                     <!--col == column-->
-                    <div class="col image-col"></div>
+                    <div id="main-slider-image" class="col image-col"></div>
 
                     <div class="col content-col">
                         <div class="top-seller">
@@ -132,88 +135,7 @@
 
             <h1 class="special-offers-title">SPECIAL OFFERS</h1>
 
-            <div class="special-offers">
-
-                <div id="offer-1" class="offer">
-                    <div class="offer-detail">
-
-                        <h3 class="offer-title">WEEKEND DEAL</h3>
-
-                        <div class="offer-sale-price">
-                            <h3>-20%</h3>
-                        </div>
-
-                        <div class="price">
-                            <h3 class="old-price">$49.99</h3>
-                            <h3 class="new-price">$24.99</h3>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div id="offer-2" class="offer">
-                    <div class="offer-detail">
-
-                        <h3 class="offer-title">FREE WEEKEND</h3>
-
-                        <h3 class="offer-2-up-to">Up to</h3>
-                        <div class="offer-2-sale-price">
-                            <h3>-15%</h3>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div id="offer-3" class="offer">
-                    <div class="offer-detail">
-
-                        <h3 class="offer-title">WEEKEND DEAL</h3>
-
-                        <div class="offer-sale-price">
-                            <h3>-20%</h3>
-                        </div>
-
-                        <div class="price">
-                            <h3 class="old-price">$49.99</h3>
-                            <h3 class="new-price">$24.99</h3>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div id="offer-4" class="offer">
-                    <div class="offer-detail">
-
-                        <h3 class="offer-title">WEEKEND DEAL</h3>
-
-                        <div class="offer-sale-price">
-                            <h3>-20%</h3>
-                        </div>
-
-                        <div class="price">
-                            <h3 class="old-price">$49.99</h3>
-                            <h3 class="new-price">$24.99</h3>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div id="offer-5" class="offer">
-                    <div class="offer-detail">
-
-                        <h3 class="offer-title">WEEKEND DEAL</h3>
-
-                        <div class="offer-sale-price">
-                            <h3>-20%</h3>
-                        </div>
-
-                        <div class="price">
-                            <h3 class="old-price">$49.99</h3>
-                            <h3 class="new-price">$24.99</h3>
-                        </div>
-
-                    </div>
-                </div>
+            <div class="special-offers" data-js="game-offers">
 
             </div>
 
@@ -236,169 +158,9 @@
 
             <div class="recommended">
 
-
-                <div class="recommended-line-1">
-
-                    <div id="recommended-1" class="recommended-games">
-                        <div class="recommended-games-detail">
-
-                            <div class="recommended-games-similar">
-                                <p>Similar to</p>
-                                <h3>The Elder Scrolls V: Skyrim Special Edition</h3>
-                            </div>
-
-                            <div class="recommended-games-price">
-                                <h3 class="recommended-normal-price">$24.99</h3>
-                            </div>
-
-                        </div>
-
-                        <div class="overlay">
-
-                            <video width="100%" height="250" autoplay loop>
-                                <source src="/videos/recommended-games/the-witcher-3.mp4" type="video/mp4">
-                            </video>
-
-                            <i id="recommended-game-icon-review-01" class="fa-regular fa-face-grin-beam"></i>
-
-                            <div class="recommended-games-detail-overlay">
-
-                                <button class="recommended-buy"><i class="fa-solid fa-basket-shopping"></i></button>
-                                <button class="recommended-wishlist"><i class="fa-regular fa-heart"></i></button>
-
-                                <div class="recommended-games-price">
-                                    <h3 class="recommended-normal-price">$24.99</h3>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div id="recommended-2" class="recommended-games">
-                        <div class="recommended-games-detail">
-
-                            <div class="recommended-games-similar">
-                                <p>Similar to</p>
-                                <h3>God of War</h3>
-                            </div>
-
-                            <div class="recommended-sale-price">
-                                <h3>-8%</h3>
-                            </div>
-
-                            <div class="recommended-games-price">
-                                <h3 class="recommended-old-price">$49.99</h3>
-                                <h3 class="recommended-new-price">$24.99</h3>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div id="recommended-3" class="recommended-games">
-                        <div class="recommended-games-detail">
-
-                            <div class="recommended-games-similar">
-                                <p>Similar to</p>
-                                <h3>DARK SOULS™ III</h3>
-                            </div>
-
-                            <div class="recommended-games-price">
-                                <h3 class="recommended-normal-price">$24.99</h3>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div id="recommended-4" class="recommended-games">
-                        <div class="recommended-games-detail">
-
-                            <div class="recommended-games-similar">
-                                <p>Similar to</p>
-                                <h3>FINAL FANTASY XV</h3>
-                            </div>
-
-                            <div class="recommended-games-price">
-                                <h3 class="recommended-normal-price">$24.99</h3>
-                            </div>
-
-                        </div>
-                    </div>
+                <div class="recommended-line-1" data-js="recommended-games">
 
                 </div>
-
-
-
-                <div class="recommended-line-2">
-
-                    <div id="recommended-5" class="recommended-games">
-                        <div class="recommended-games-detail">
-
-                            <div class="recommended-games-similar">
-                                <p>Similar to</p>
-                                <h3>Hollow Knight</h3>
-                            </div>
-
-                            <div class="recommended-games-price">
-                                <h3 class="recommended-normal-price">$24.99</h3>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div id="recommended-6" class="recommended-games">
-                        <div class="recommended-games-detail">
-
-                            <div class="recommended-games-similar">
-                                <p>Similar to</p>
-                                <h3>Resident Evil 6</h3>
-                            </div>
-
-                            <div class="recommended-games-price">
-                                <h3 class="recommended-normal-price">$24.99</h3>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div id="recommended-7" class="recommended-games">
-                        <div class="recommended-games-detail">
-
-                            <div class="recommended-games-similar">
-                                <p>Similar to</p>
-                                <h3>NieR:Automata</h3>
-                            </div>
-
-                            <div class="recommended-games-price">
-                                <h3 class="recommended-normal-price">$24.99</h3>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                    <div id="recommended-8" class="recommended-games">
-                        <div class="recommended-games-detail">
-
-                            <div class="recommended-games-similar">
-                                <p>Similar to</p>
-                                <h3>Borderlands 3</h3>
-                            </div>
-
-                            <div class="recommended-games-price">
-                                <h3 class="recommended-normal-price">Free</h3>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
 
             </div>
 
@@ -417,84 +179,38 @@
 
     <section class="whats-popular-and-promoted-section">
 
+        <div class="whats-popular-container">
 
-
-        <div class="whats-popular">
-
-            <div class="recommended-line-2">
-
-                <div id="recommended-5" class="recommended-games">
-                    <div class="recommended-games-detail">
-
-                        <div class="recommended-games-similar">
-                            <p>Similar to</p>
-                            <h3>Hollow Knight</h3>
-                        </div>
-
-                        <div class="recommended-games-price">
-                            <h3 class="recommended-normal-price">$24.99</h3>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div id="recommended-6" class="recommended-games">
-                    <div class="recommended-games-detail">
-
-                        <div class="recommended-games-similar">
-                            <p>Similar to</p>
-                            <h3>Resident Evil 6</h3>
-                        </div>
-
-                        <div class="recommended-games-price">
-                            <h3 class="recommended-normal-price">$24.99</h3>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div id="recommended-7" class="recommended-games">
-                    <div class="recommended-games-detail">
-
-                        <div class="recommended-games-similar">
-                            <p>Similar to</p>
-                            <h3>NieR:Automata</h3>
-                        </div>
-
-                        <div class="recommended-games-price">
-                            <h3 class="recommended-normal-price">$24.99</h3>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div id="recommended-8" class="recommended-games">
-                    <div class="recommended-games-detail">
-
-                        <div class="recommended-games-similar">
-                            <p>Similar to</p>
-                            <h3>Borderlands 3</h3>
-                        </div>
-
-                        <div class="recommended-games-price">
-                            <h3 class="recommended-normal-price">Free</h3>
-                        </div>
-
-                    </div>
-                </div>
-
+            <div class="whats-popular-containers-titles">
+                <h1 class="whats-popular-title">WHAT'S POPULAR</h1>
+                <h1 class="whats-popular-title">PROMOTED</h1>
             </div>
 
+            <div class="popular">
+                <div class="popular-container">
+                    <div>
 
+                        <div class="popular-tabs">
+                            <a class="active" href="">New and Trending</a>
+                            <a href="">Top Sellers</a>
+                            <a href="">Upcoming</a>
+                            <a href="">Specials</a>
+                        </div>
+                        
+                        <div class="popular-games-box">
+                            <ul data-js="popular-games" class="popular-games-container"></ul>
+                        </div>
 
-
-            <div class="promoted">
-
+                    </div>
+                    <div class="popular-adsense">
+                        <img class="promoted-images"
+                            src="imgs/backgrounds/whats-popular_promoted/promoted/ubisoft-promo-sale.webp" alt="">
+                            <img class="promoted-valve-images"
+                            src="imgs/backgrounds/whats-popular_promoted/promoted/valve-oculus.jpg" alt="">
+                    </div>
+                </div>
             </div>
-
+        </div>
 
 
     </section>
@@ -521,7 +237,8 @@
 
 
 
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="./js/special-offer.js"></script>
 
 </body>
 

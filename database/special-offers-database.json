@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "image": "imgs/backgrounds/special-offers/forza-5.png",
+        "name": "Forza Horizon 5",
+
+        "review": "",
+
+        "similarTo": "",
+        "gameKeywords": ["Race", "Open World", "Multiplayer", "Adventure"],
+        "gameCategoryType": "",
+
+        "offerTitle": "WEEKEND DEAL",
+        "actual_price": "249,99",
+        "old_price": "49,99",
+        "isInOffer": true,
+        "dealOffer": "-20"
+    },
+    {
+        "id": 2,
+        "image": "imgs/backgrounds/special-offers/deadrising-4.png",
+        "name": "Dead Rising 4",
+
+        "review": "",
+
+        "similarTo": "",
+        "gameKeywords": [""],
+        "gameCategoryType": "",
+
+        "offerTitle": "WEEKEND DEAL",
+        "actual_price": "69,99",
+        "old_price": "17,49",
+        "isInOffer": true,
+        "dealOffer": "-75"
+    },
+    {
+        "id": 3,
+        "image": "imgs/backgrounds/special-offers/borderlands-3.png",
+        "name": "Borderlands 3",
+
+        "review": "",
+
+        "similarTo": "",
+        "gameKeywords": [""],
+        "gameCategoryType": "",
+
+        "offerTitle": "WEEKEND DEAL",
+        "actual_price": "119,90",
+        "old_price": "35,97",
+        "isInOffer": true,
+        "dealOffer": "-30"
+    }
+]

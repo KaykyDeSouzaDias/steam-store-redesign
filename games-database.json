@@ -1,0 +1,17 @@
+[
+    {
+        "image": "imgs/backgrounds/main-slider/twd.jpg",
+        "name": "The Walking Dead - The Telltale Definitive Series",
+
+        "review": "Very Positive",
+
+        "similarTo": "Life is Strange",
+        "gameKeywords": ["You Decide", "Terror", "Interactive Fiction", "Good Plot"],
+        "gameCategoryType": "Top Seller",
+
+        "actual_price": "249,99",
+        "old_price": "",
+        "isInOffer": false,
+        "dealOffer": ""
+    }
+]

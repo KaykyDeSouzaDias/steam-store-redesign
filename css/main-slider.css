@@ -131,7 +131,7 @@
     width: 60%;
     height: 100%;
 
-    background-image: url("/imgs/backgrounds/main-slider/twd.jpg");
+    /* background-image: url("/imgs/backgrounds/main-slider/twd.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center right;
