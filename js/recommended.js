@@ -45,11 +45,9 @@ export function displayRecommended() {
   showRecommendedCards(recommendedGames);
 }
 
-displayRecommended();
-
-function showRecommendedCards(ms) {
-  const ulsl = document.querySelector('[data-js="recommended-games"]');
-  ms ? (ulsl.innerHTML = ms) : (ulsl.innerHTML = "");
+function showRecommendedCards(recommended) {
+  const html = document.querySelector('[data-js="recommended-games"]');
+  recommended ? (html.innerHTML = recommended) : (html.innerHTML = "");
 }
 
 export function setRecommended_BackgroundImage() {
@@ -59,5 +57,3 @@ export function setRecommended_BackgroundImage() {
     ).style.backgroundImage = `url("${offer.image}")`;
   });
 }
-
-setRecommended_BackgroundImage();
