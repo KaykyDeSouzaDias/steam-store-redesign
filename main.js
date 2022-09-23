@@ -3,6 +3,7 @@ import {
   setSpecialOffer_BackgroundImage,
   displayRecommended,
   setRecommended_BackgroundImage,
+  displayWhatsPopularGames,
 } from "./js/index.js";
 
 import { getMainSlider } from "./services/games-database-service.js";
@@ -18,3 +19,5 @@ setSpecialOffer_BackgroundImage();
 
 displayRecommended();
 setRecommended_BackgroundImage();
+
+displayWhatsPopularGames();
