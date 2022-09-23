@@ -5,8 +5,9 @@ const whatsPopularData = await getWhatsPopular();
 export function displayWhatsPopularGames() {
   let games = "";
 
-  games += whatsPopularData.map((popular) => {
-    return `
+  games += whatsPopularData
+    .map((popular) => {
+      return `
     <hr class="popular-games-divider">
     <li class="popular-games">
       <div>
@@ -55,7 +56,8 @@ export function displayWhatsPopularGames() {
       }
     </li>
   `;
-  });
+    })
+    .join("");
 
   showPopularGamesCards(games);
 }
