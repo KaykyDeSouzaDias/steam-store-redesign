@@ -28,9 +28,9 @@ export function displaySpecialOffers() {
   showSpecialOffersCards(gameOffers);
 }
 
-function showSpecialOffersCards(ms) {
-  const ulsl = document.querySelector('[data-js="game-offers"]');
-  return ms ? (ulsl.innerHTML = ms) : (ulsl.innerHTML = "");
+function showSpecialOffersCards(offers) {
+  const html = document.querySelector('[data-js="game-offers"]');
+  return offers ? (html.innerHTML = offers) : (html.innerHTML = "");
 }
 
 export function setSpecialOffer_BackgroundImage() {
