@@ -1,0 +1,82 @@
+[
+  {
+    "image": "imgs/backgrounds/your-top-categories/action/vanguard.png",
+    "name": "Call of Duty: Vanguard",
+
+    "review": "Positive",
+
+    "similarTo": "",
+    "gameKeywords": [
+      "FPS",
+      "Shooter",
+      "Action",
+      "Multiplayer"
+    ],
+    "gameCategoryType": "Top Seller",
+
+    "actual_price": "229,90",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/your-top-categories/action/diablo.png",
+    "name": "Diablo 2: Resurrected",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": [],
+    "gameCategoryType": "New",
+
+    "actual_price": "179,90",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/your-top-categories/action/jedi.png",
+    "name": "STAR WARS Jedi: Fallen Order",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": [],
+    "gameCategoryType": "Trending",
+
+    "actual_price": "199,00",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/your-top-categories/action/madden.png",
+    "name": "Madden NFL 20",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": [],
+    "gameCategoryType": "Upcoming",
+
+    "actual_price": "199,00",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/your-top-categories/action/the-walking-dead.jpg",
+    "name": "The Walking Dead: The Final Season",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": [],
+    "gameCategoryType": "Best Of",
+
+    "actual_price": "71,50",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  }
+]

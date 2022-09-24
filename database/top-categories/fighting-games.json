@@ -1,0 +1,77 @@
+[
+  {
+    "image": "imgs/backgrounds/your-top-categories/fighting/gunfire.png",
+    "name": "Gunfire Reborn",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": [],
+    "gameCategoryType": "Top Seller",
+
+    "actual_price": "47,99",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/your-top-categories/fighting/hello-neighbor-2.png",
+    "name": "Hello Neighbor 2",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": [],
+    "gameCategoryType": "New",
+
+    "actual_price": "75,49",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/your-top-categories/fighting/modern-warfare.png",
+    "name": "Call of Duty: Modern Warfare 2",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": [],
+    "gameCategoryType": "Trending",
+
+    "actual_price": "299,00",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/your-top-categories/fighting/overwatch-2.png",
+    "name": "Overwatch 2",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": [],
+    "gameCategoryType": "Upcoming",
+
+    "actual_price": "Free",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/your-top-categories/fighting/ufc.png",
+    "name": "UFC 4",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": [],
+    "gameCategoryType": "Best Of",
+
+    "actual_price": "339,00",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  }
+]

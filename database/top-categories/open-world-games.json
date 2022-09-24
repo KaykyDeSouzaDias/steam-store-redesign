@@ -1,0 +1,77 @@
+[
+  {
+    "image": "imgs/backgrounds/your-top-categories/open-world/diablo-4.png",
+    "name": "Diablo 4",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": [],
+    "gameCategoryType": "Top Seller",
+
+    "actual_price": "399,00",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/your-top-categories/open-world/f1.png",
+    "name": "F1 Manager 2022",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": [],
+    "gameCategoryType": "New",
+
+    "actual_price": "99,99",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/your-top-categories/open-world/sea-of-thieves.png",
+    "name": "Sea of Thieves",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": [],
+    "gameCategoryType": "Trending",
+
+    "actual_price": "44,99",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/your-top-categories/open-world/state-of-decay-2.png",
+    "name": "State of Decay 2",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": [],
+    "gameCategoryType": "Upcoming",
+
+    "actual_price": "39,99",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  },
+  {
+    "image": "imgs/backgrounds/your-top-categories/open-world/watch-dogs.png",
+    "name": "Watch Dogs Legion",
+
+    "review": "",
+
+    "similarTo": "",
+    "gameKeywords": [],
+    "gameCategoryType": "Best Of",
+
+    "actual_price": "249,99",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  }
+]
