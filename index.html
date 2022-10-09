@@ -1,245 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/header-menu.css" />
+    <link rel="stylesheet" href="css/main-slider.css" />
+    <link rel="stylesheet" href="css/special-offers-slider.css" />
+    <link rel="stylesheet" href="css/recommended.css" />
+    <link rel="stylesheet" href="css/whats-popular-promoted.css" />
+    <link rel="stylesheet" href="css/your-top-categories.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/header-menu.css">
-    <link rel="stylesheet" href="css/main-slider.css">
-    <link rel="stylesheet" href="css/special-offers-slider.css">
-    <link rel="stylesheet" href="css/recommended.css">
-    <link rel="stylesheet" href="css/whats-popular-promoted.css">
-    <link rel="stylesheet" href="css/your-top-categories.css">
-    <script src="https://kit.fontawesome.com/0fb81c7629.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/0fb81c7629.js"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <title>Steam redesign clone</title>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header>
+      <div class="menu">
+        <div class="menuContent">
+          <img class="logo" src="imgs/logo/steam-logo.png" alt="" />
 
-        <div class="menu">
+          <div class="mainBtns">
+            <a href="" class="steamOptions">STORE</a>
+            <a href="" class="steamOptions">COMMUNITY</a>
+            <a href="" class="steamOptions">ABOUT</a>
+            <a href="" class="steamOptions">SUPPORT</a>
+          </div>
 
-            <div class="menuContent">
-
-                <img class="logo" src="imgs/logo/steam-logo.png" alt="">
-
-                <div class="mainBtns">
-
-                    <a href="" class="steamOptions">STORE</a>
-                    <a href="" class="steamOptions">COMMUNITY</a>
-                    <a href="" class="steamOptions">ABOUT</a>
-                    <a href="" class="steamOptions">SUPPORT</a>
-
-                </div>
-
-                <a href="" class="storeCart"><i class="fa-solid fa-cart-shopping fa-1x"></i></a>
-                <a href="" class="loginBtn">LOGIN</a>
-                <button class="downloadBtn">GET &nbsp; <i class="fa-brands fa-steam"></i></button>
-
-            </div>
-
+          <a href="" class="storeCart"
+            ><i class="fa-solid fa-cart-shopping fa-1x"></i
+          ></a>
+          <a href="" class="loginBtn">LOGIN</a>
+          <button class="downloadBtn">
+            GET &nbsp; <i class="fa-brands fa-steam"></i>
+          </button>
         </div>
-
+      </div>
     </header>
 
-
-
     <section class="slider-section">
-
-        <div class="slider-container">
-
-
-            <div class="left-slider">
-                <div class="left-game-title">
-                    <h3>ASSASSIN'S CREED<br>VALHALLA</h3>
-                </div>
-            </div>
-
-
-            <div class="slider">
-
-                <h1 class="slider-title">FEATURED & RECOMMENDED</h1>
-
-                <div class="main-slider">
-
-                    <!--col == column-->
-                    <div id="main-slider-image" class="col image-col"></div>
-
-                    <div class="col content-col">
-                        <div class="top-seller">
-                            <i class="fa-solid fa-crown"></i>
-                            <p class="top-seller-txt">Top Seller</p>
-                        </div>
-
-                        <br>
-
-                        <h1 class="game-title" id="main-game-title">The Walking Dead - The Telltale Definitive Series
-                        </h1>
-
-                        <br>
-
-                        <div class="slider-keywords">
-                            <p id="slider-keyword-1">You&nbsp;Decide</p>
-                            <i class="fa-solid fa-circle"></i>
-                            <p id="slider-keyword-2">Terror</p>
-                            <i class="fa-solid fa-circle"></i>
-                            <p id="slider-keyword-3">Adventure</p>
-                            <i class="fa-solid fa-circle"></i>
-                            <p id="slider-keyword-4">Zombies</p>
-                        </div>
-
-                        <h3 class="slider-price" id="main-slider-price">R$ 249,99</h3>
-
-                        <div class="slider-bottom-content">
-                            <button class="slider-buy"><i class="fa-solid fa-basket-shopping"></i></button>
-                            <button class="slider-wishlist"><i class="fa-regular fa-heart"></i></button>
-
-                            <i class="fa-brands fa-windows"></i>
-                            <i class="fa-brands fa-apple"></i>
-
-
-                            <p class="slider-review" id="main-slider-text-review">Very Positive</p>
-                            <i id="main-slider-icon-review" class="fa-regular fa-face-grin-beam"></i>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="right-slider">
-                <div class="right-game-title">
-                    <h3>RED DEAD<br>REDEMPTION 2</h3>
-                </div>
-            </div>
-
-
+      <div class="slider-container">
+        <div class="left-slider">
+          <div class="left-game-title">
+            <h3>ASSASSIN'S CREED<br />VALHALLA</h3>
+          </div>
         </div>
 
+        <div class="slider">
+          <h1 class="slider-title">FEATURED & RECOMMENDED</h1>
+
+          <div class="main-slider">
+            <!--col == column-->
+            <div id="main-slider-image" class="col image-col"></div>
+
+            <div class="col content-col">
+              <div class="top-seller">
+                <i class="fa-solid fa-crown"></i>
+                <p class="top-seller-txt">Top Seller</p>
+              </div>
+
+              <br />
+
+              <h1 class="game-title" id="main-game-title">
+                The Walking Dead - The Telltale Definitive Series
+              </h1>
+
+              <br />
+
+              <div class="slider-keywords">
+                <p id="slider-keyword-1">You&nbsp;Decide</p>
+                <i class="fa-solid fa-circle"></i>
+                <p id="slider-keyword-2">Terror</p>
+                <i class="fa-solid fa-circle"></i>
+                <p id="slider-keyword-3">Adventure</p>
+                <i class="fa-solid fa-circle"></i>
+                <p id="slider-keyword-4">Zombies</p>
+              </div>
+
+              <h3 class="slider-price" id="main-slider-price">R$ 249,99</h3>
+
+              <div class="slider-bottom-content">
+                <button class="slider-buy">
+                  <i class="fa-solid fa-basket-shopping"></i>
+                </button>
+                <button class="slider-wishlist">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <i class="fa-brands fa-windows"></i>
+                <i class="fa-brands fa-apple"></i>
+
+                <p class="slider-review" id="main-slider-text-review">
+                  Very Positive
+                </p>
+                <i
+                  id="main-slider-icon-review"
+                  class="fa-regular fa-face-grin-beam"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-slider">
+          <div class="right-game-title">
+            <h3>RED DEAD<br />REDEMPTION 2</h3>
+          </div>
+        </div>
+      </div>
     </section>
-
-
 
     <section class="special-offers-section">
+      <div class="special-offers-container">
+        <h1 class="special-offers-title">SPECIAL OFFERS</h1>
 
-        <div class="special-offers-container">
+        <div class="special-offers" data-js="game-offers"></div>
 
-            <h1 class="special-offers-title">SPECIAL OFFERS</h1>
-
-            <div class="special-offers" data-js="game-offers">
-
-            </div>
-
-            <div class="pass-offer-slide-button">
-                <button><i class="fa-solid fa-angle-right"></i></button>
-                <button><i class="fa-solid fa-angle-left"></i></button>
-            </div>
-
+        <div class="pass-offer-slide-button">
+          <button><i class="fa-solid fa-angle-right"></i></button>
+          <button><i class="fa-solid fa-angle-left"></i></button>
         </div>
-
+      </div>
     </section>
-
-
 
     <section class="recommended-section">
+      <div class="recommended-container">
+        <h1 class="recommended-title">RECOMMENDED</h1>
 
-        <div class="recommended-container">
-
-            <h1 class="recommended-title">RECOMMENDED</h1>
-
-            <div class="recommended">
-
-                <div class="recommended-line-1" data-js="recommended-games">
-
-                </div>
-
-            </div>
-
-
-            <div class="steam-labs-container">
-                <h1 class="steam-labs-text">Find your next favorite game with</h1>&nbsp; <h1 class="steam-labs-title">
-                    Steam Labs</h1>
-                <button>Explore <i class="fa-solid fa-angle-right fa-1x"></i></button>
-            </div>
-
+        <div class="recommended">
+          <div class="recommended-line-1" data-js="recommended-games"></div>
         </div>
 
+        <div class="steam-labs-container">
+          <h1 class="steam-labs-text">Find your next favorite game with</h1>
+          &nbsp;
+          <h1 class="steam-labs-title">Steam Labs</h1>
+          <button>Explore <i class="fa-solid fa-angle-right fa-1x"></i></button>
+        </div>
+      </div>
     </section>
-
-
 
     <section class="whats-popular-and-promoted-section">
-
-        <div class="whats-popular-container">
-
-            <div class="whats-popular-containers-titles">
-                <h1 class="whats-popular-title">WHAT'S POPULAR</h1>
-                <h1 class="whats-popular-title">PROMOTED</h1>
-            </div>
-
-            <div class="popular">
-                <div class="popular-container">
-                    <div>
-
-                        <div class="popular-tabs">
-                            <a class="active" href="">New and Trending</a>
-                            <a href="">Top Sellers</a>
-                            <a href="">Upcoming</a>
-                            <a href="">Specials</a>
-                        </div>
-                        
-                        <div class="popular-games-box">
-                            <ul data-js="popular-games" class="popular-games-container"></ul>
-                        </div>
-
-                    </div>
-                    <div class="popular-adsense">
-                        <img class="promoted-images"
-                            src="imgs/backgrounds/whats-popular_promoted/promoted/ubisoft-promo-sale.webp" alt="">
-                            <img class="promoted-valve-images"
-                            src="imgs/backgrounds/whats-popular_promoted/promoted/valve-oculus.jpg" alt="">
-                    </div>
-                </div>
-            </div>
+      <div class="whats-popular-container">
+        <div class="whats-popular-containers-titles">
+          <h1 class="whats-popular-title">WHAT'S POPULAR</h1>
+          <h1 class="whats-popular-title">PROMOTED</h1>
         </div>
 
+        <div class="popular">
+          <div class="popular-container">
+            <div>
+              <div class="popular-tabs">
+                <a class="active" href="">New and Trending</a>
+                <a href="">Top Sellers</a>
+                <a href="">Upcoming</a>
+                <a href="">Specials</a>
+              </div>
 
+              <div class="popular-games-box">
+                <ul
+                  data-js="popular-games"
+                  class="popular-games-container"
+                ></ul>
+              </div>
+            </div>
+            <div class="popular-adsense">
+              <img
+                class="promoted-images"
+                src="imgs/backgrounds/whats-popular_promoted/promoted/ubisoft-promo-sale.webp"
+                alt=""
+              />
+              <img
+                class="promoted-valve-images"
+                src="imgs/backgrounds/whats-popular_promoted/promoted/valve-oculus.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-
 
     <section class="your-top-categories-section">
+      <div class="whats-popular-container">
+        <div class="whats-popular-containers-titles">
+          <h1 class="whats-popular-title">YOUR TOP CATEGORIES</h1>
+          <h1 class="top-categories-title-btn">
+            All Categories
+            <span class="material-symbols-outlined"> chevron_right </span>
+          </h1>
+        </div>
+        <hr class="top-categories-header-divider" />
 
+        <div class="popular">
+          <div class="popular-container">
+            <div id="action-game" class="top-categories-games">
+              <div class="top-categories-game-details">
+                <div class="top-seller">
+                  <i class="fa-solid fa-crown"></i>
+                  <p class="top-seller-txt">Top Seller</p>
+                </div>
+
+                <div class="recommended-games-price">
+                  <h3 class="recommended-normal-price">R$23,99</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <section class="watch-game-trailers-section"></section>
 
-
-    <section class="watch-game-trailers-section">
-
-    </section>
-
-
-
-    <section class="footer">
-
-    </section>
-
-
-
-
+    <section class="footer"></section>
 
     <script type="module" src="main.js"></script>
     <script type="module" src="./js/special-offer.js"></script>
-
-</body>
-
+  </body>
 </html>
