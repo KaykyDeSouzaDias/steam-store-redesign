@@ -22,3 +22,21 @@ export async function getWhatsPopular() {
   );
   return data;
 }
+export async function getTopActionCategories() {
+  const data = await fetch("./database/top-categories/action-games.json").then(
+    (res) => res.json()
+  );
+  return data;
+}
+export async function getTopFightingCategories() {
+  const data = await fetch(
+    "./database/top-categories/fighting-games.json"
+  ).then((res) => res.json());
+  return data;
+}
+export async function getTopOpenWorldCategories() {
+  const data = await fetch(
+    "./database/top-categories/open-world-games.json"
+  ).then((res) => res.json());
+  return data;
+}

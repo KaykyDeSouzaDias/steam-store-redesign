@@ -1,17 +1,14 @@
 [
   {
+    "id": 1,
     "image": "imgs/backgrounds/your-top-categories/action/vanguard.png",
     "name": "Call of Duty: Vanguard",
 
     "review": "Positive",
 
     "similarTo": "",
-    "gameKeywords": [
-      "FPS",
-      "Shooter",
-      "Action",
-      "Multiplayer"
-    ],
+    "gameKeywords": ["FPS", "Shooter", "Action", "Multiplayer"],
+    "gameCategoryTypeIcon": "stars",
     "gameCategoryType": "Top Seller",
 
     "actual_price": "229,90",
@@ -20,6 +17,7 @@
     "dealOffer": ""
   },
   {
+    "id": 2,
     "image": "imgs/backgrounds/your-top-categories/action/diablo.png",
     "name": "Diablo 2: Resurrected",
 
@@ -27,6 +25,7 @@
 
     "similarTo": "",
     "gameKeywords": [],
+    "gameCategoryTypeIcon": "magic_button",
     "gameCategoryType": "New",
 
     "actual_price": "179,90",
@@ -35,6 +34,7 @@
     "dealOffer": ""
   },
   {
+    "id": 3,
     "image": "imgs/backgrounds/your-top-categories/action/jedi.png",
     "name": "STAR WARS Jedi: Fallen Order",
 
@@ -42,6 +42,7 @@
 
     "similarTo": "",
     "gameKeywords": [],
+    "gameCategoryTypeIcon": "trending_up",
     "gameCategoryType": "Trending",
 
     "actual_price": "199,00",
@@ -50,6 +51,7 @@
     "dealOffer": ""
   },
   {
+    "id": 4,
     "image": "imgs/backgrounds/your-top-categories/action/madden.png",
     "name": "Madden NFL 20",
 
@@ -57,6 +59,7 @@
 
     "similarTo": "",
     "gameKeywords": [],
+    "gameCategoryTypeIcon": "event_upcoming",
     "gameCategoryType": "Upcoming",
 
     "actual_price": "199,00",
@@ -65,6 +68,7 @@
     "dealOffer": ""
   },
   {
+    "id": 5,
     "image": "imgs/backgrounds/your-top-categories/action/the-walking-dead.jpg",
     "name": "The Walking Dead: The Final Season",
 
@@ -72,6 +76,7 @@
 
     "similarTo": "",
     "gameKeywords": [],
+    "gameCategoryTypeIcon": "military_tech",
     "gameCategoryType": "Best Of",
 
     "actual_price": "71,50",

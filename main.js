@@ -4,6 +4,12 @@ import {
   displayRecommended,
   setRecommended_BackgroundImage,
   displayWhatsPopularGames,
+  displayTopActionCategoriesGames,
+  setActionGame_BackgroundImage,
+  displayTopFightingCategoriesGames,
+  setFightingGame_BackgroundImage,
+  displayTopOpenWorldCategoriesGames,
+  setOpenWorldGame_BackgroundImage,
 } from "./js/index.js";
 
 import { getMainSlider } from "./services/games-database-service.js";
@@ -21,3 +27,10 @@ displayRecommended();
 setRecommended_BackgroundImage();
 
 displayWhatsPopularGames();
+
+displayTopActionCategoriesGames();
+setActionGame_BackgroundImage();
+displayTopFightingCategoriesGames();
+setFightingGame_BackgroundImage();
+displayTopOpenWorldCategoriesGames();
+setOpenWorldGame_BackgroundImage();
