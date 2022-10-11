@@ -10,6 +10,8 @@ import {
   setFightingGame_BackgroundImage,
   displayTopOpenWorldCategoriesGames,
   setOpenWorldGame_BackgroundImage,
+  displayValueGamesAndHotDeals,
+  setHotDeals_BackgroundImage,
 } from "./js/index.js";
 
 import { getMainSlider } from "./services/games-database-service.js";
@@ -34,3 +36,6 @@ displayTopFightingCategoriesGames();
 setFightingGame_BackgroundImage();
 displayTopOpenWorldCategoriesGames();
 setOpenWorldGame_BackgroundImage();
+
+displayValueGamesAndHotDeals();
+setHotDeals_BackgroundImage();

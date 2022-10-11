@@ -1,0 +1,130 @@
+.hot-deals-section {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+}
+.deal-container {
+  position: relative;
+}
+.deal-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+
+  margin-bottom: 20px;
+
+  color: white;
+}
+.deal {
+  width: 1200px;
+  height: 450px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.deal-line-1 {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 0px;
+  padding-inline-start: 0;
+
+  position: relative;
+}
+
+.deal-games {
+  width: 280px;
+  height: 200px;
+
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  transition: 0.3s;
+}
+.deal-games:hover {
+  z-index: 1;
+  transform: scale(1.3);
+
+  transition: 0.3s;
+}
+
+.deal-games-detail {
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+
+  background-color: #231d23;
+}
+
+.deal-sale-price {
+  width: 40px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 90px;
+
+  background-color: #c1e45d;
+}
+.deal-sale-price h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 13px;
+
+  color: black;
+}
+.deal-games-price {
+  height: 100%;
+
+  position: absolute;
+  right: 20px;
+
+  text-align: right;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.deal-old-price {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+
+  text-decoration: line-through;
+
+  color: #6e6b6f;
+}
+.deal-new-price {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+
+  color: white;
+}
+.deal-normal-price {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+
+  color: white;
+}
