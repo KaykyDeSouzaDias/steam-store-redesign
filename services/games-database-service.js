@@ -51,3 +51,10 @@ export async function getValueGamesAndHotDeals() {
   );
   return data;
 }
+
+export async function getWatchGameTrailer() {
+  const data = await fetch("./database/watch-game-trailer-database.json").then(
+    (res) => res.json()
+  );
+  return data;
+}

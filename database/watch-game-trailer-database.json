@@ -1,0 +1,24 @@
+[
+  {
+    "image": "imgs/backgrounds/watch-game-trailer/bayonetta-2-screenshot.avif",
+    "name": "Bayonetta 2",
+
+    "review": "Very Positive",
+    "reviewIcon": "mood",
+
+    "releaseDate": "febuary 16th 2018",
+
+    "developer": "Platinum Games",
+    "publisher": "Nintendo",
+    "platforms": ["Nintendo Switch"],
+
+    "similarTo": "",
+    "gameKeywords": ["Action", "Arcade", "RPG", "Fantasy"],
+    "gameCategoryType": "",
+
+    "actual_price": "249,00",
+    "old_price": "",
+    "isInOffer": false,
+    "dealOffer": ""
+  }
+]

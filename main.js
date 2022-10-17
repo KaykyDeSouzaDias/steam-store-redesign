@@ -12,6 +12,7 @@ import {
   setOpenWorldGame_BackgroundImage,
   displayValueGamesAndHotDeals,
   setHotDeals_BackgroundImage,
+  displayWatchGameTrailer,
 } from "./js/index.js";
 
 import { getMainSlider } from "./services/games-database-service.js";
@@ -39,3 +40,5 @@ setOpenWorldGame_BackgroundImage();
 
 displayValueGamesAndHotDeals();
 setHotDeals_BackgroundImage();
+
+displayWatchGameTrailer();
