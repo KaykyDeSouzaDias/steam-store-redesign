@@ -1,100 +1,252 @@
 .header {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
-
 .menu {
+  width: 100%;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+
+  box-shadow: 0px 0px 100px 0px rgb(110, 107, 111, 0.5);
+  background-color: #231d23;
+}
+.menu-mobile {
+  display: none;
+}
+
+.menu-content-container {
+  width: 1200px;
+  height: 100%;
+
+  background: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.content-logo {
+  width: 100px;
+  height: 30px;
+
+  background: none;
+}
+
+.content-buttons-container {
+  padding-left: 10px;
+  padding-right: 50px;
+  display: flex;
+  background: none;
+}
+.content-buttons-container a {
+  font-family: "muli";
+  font-weight: 700;
+  font-size: medium;
+
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+
+  color: white;
+}
+.content-buttons-container a:hover {
+  color: #00aeef;
+}
+
+.content-icon {
+  display: flex;
+  align-items: flex-end;
+
+  font-family: "muli";
+  font-weight: 700;
+  font-size: large;
+  text-decoration: none;
+
+  margin-right: 20px;
+  margin-left: 20px;
+
+  color: #6e6b6f;
+}
+.cart-icon {
+  color: #00aeef;
+}
+
+.content-user {
+  display: flex;
+  align-items: center;
+
+  font-family: "muli";
+  font-weight: 700;
+  text-decoration: none;
+
+  margin-right: 20px;
+
+  color: white;
+}
+.content-user span {
+  font-size: small;
+}
+
+.content-divider {
+  height: 100%;
+
+  border: 0;
+  border-left: 1px solid #2c252d;
+}
+
+.content-download-button {
+  width: 100px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "muli";
+  font-weight: 600;
+  font-size: large;
+  text-decoration: none;
+
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #c1e45d;
+
+  transition: 0.2s ease-in-out;
+
+  color: #c1e45d;
+  background: none;
+}
+.content-download-button i {
+  font-size: x-large;
+}
+.content-download-button:hover {
+  color: #231d23;
+  background-color: #c1e45d;
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+  .menu-mobile {
     width: 100%;
     height: 60px;
 
     display: flex;
+    justify-content: center;
     align-self: center;
     align-items: center;
     align-content: center;
 
     box-shadow: 0px 0px 100px 0px rgb(110, 107, 111, 0.5);
-    background-color: #231D23;
+    background-color: #231d23;
+  }
+
+  .menu-content-container {
+    width: 100%;
+  }
 }
 
-.menuContent {
-    height: 100%;
-    float: none;
-    position: relative;
-    top: 0px;
-    left: 50%;
-    transform: translate(-50%);
+/* -> menu mobile version */
 
-    background: none;
-
-    display: flex;
-    align-self: center;
-    align-items: center;
-    align-content: center;
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #231d23;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-.menuContent a {
-    background: none;
+.side-nav .close-btn {
+  text-decoration: none;
+  display: block;
+
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  margin-left: 50px;
+  padding: 8px 8px 8px 32px;
+
+  transition: 0.3s;
+
+  color: #818181;
+}
+.side-nav .content-user-mobile {
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  top: 5px;
+  left: -15px;
+  padding: 8px 8px 8px 32px;
+
+  font-family: "muli";
+  font-weight: 700;
+  text-decoration: none;
+
+  color: white;
+}
+.side-nav .content-user-mobile span {
+  font-size: small;
 }
 
+.menu-content-container-mobile {
+  width: 100%;
+  height: 100%;
 
-.logo {
-    width: 100px;
-    height: 30px;
+  background: none;
 
-    background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.mainBtns {
-    padding-left: 10px;
-    padding-right: 50px;
-    display: flex;
-    background: none;
+.content-buttons-container-mobile {
+  display: flex;
+  flex-direction: column;
+  background: none;
+}
+.content-buttons-container-mobile a {
+  font-family: "muli";
+  font-weight: 700;
+  font-size: medium;
+
+  text-align: left;
+  text-decoration: none;
+
+  padding: 8px 8px 8px 32px;
+
+  color: white;
 }
 
-.steamOptions {
-    font-size: small;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+.content-container-mobile {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 
-    color: white;
-
-    padding: 15px;
+  padding-top: 20px;
 }
 
-.storeCart {
-    padding: 30px;
-    color: white;
-}
-
-.loginBtn {
-    font-size: small;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-
-    color: white;
-
-    padding: 8px;
-}
-
-.downloadBtn {
-    width: 100px;
-    height: 40px;
-    background: none;
-
-    font-size: medium;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-
-    color: #C1E45D;
-
-    border-radius: 3px;
-    border-style: solid;
-    border-color: #C1E45D;
+.footer-content-side-nav-mobile {
+  display: flex;
+  align-items: center;
 }

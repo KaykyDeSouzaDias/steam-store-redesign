@@ -21,6 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0"
     />
     <link rel="stylesheet" href="https://use.typekit.net/ywv0kef.css" />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
 
     <script
       src="https://kit.fontawesome.com/0fb81c7629.js"
@@ -35,25 +36,88 @@
   </head>
 
   <body>
+    <div id="menuSidenav" class="side-nav">
+      <div class="content-user-mobile">
+        <i class="ph-2x ph-user-square-fill"></i>
+        <span>userX</span>
+      </div>
+      <a
+        href="javascript:void(0)"
+        class="close-btn"
+        onclick="closeMenuSideNav()"
+        ><i class="ph-lg ph-x-fill"></i
+      ></a>
+      <div class="menu-content-container-mobile">
+        <div class="content-buttons-container-mobile">
+          <a href="">Discover</a>
+          <a href="">Games</a>
+          <a href="">Software</a>
+          <a href="">More</a>
+        </div>
+
+        <div class="content-container-mobile">
+          <div class="footer-content-side-nav-mobile">
+            <div class="content-icon cart-icon">
+              <i class="ph-lg ph-shopping-cart-simple-fill"></i>
+            </div>
+
+            <button class="content-download-button">
+              Get &nbsp; <i class="lni lni-steam"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <header>
       <div class="menu">
-        <div class="menuContent">
-          <img class="logo" src="imgs/logo/steam-logo.png" alt="" />
+        <div class="menu-content-container">
+          <div class="content-container">
+            <img class="content-logo" src="imgs/logo/steam-logo.png" alt="" />
 
-          <div class="mainBtns">
-            <a href="" class="steamOptions">STORE</a>
-            <a href="" class="steamOptions">COMMUNITY</a>
-            <a href="" class="steamOptions">ABOUT</a>
-            <a href="" class="steamOptions">SUPPORT</a>
+            <div class="content-buttons-container">
+              <a href="">Discover</a>
+              <a href="">Games</a>
+              <a href="">Software</a>
+              <a href="">More</a>
+            </div>
           </div>
 
-          <a href="" class="storeCart"
-            ><i class="fa-solid fa-cart-shopping fa-1x"></i
-          ></a>
-          <a href="" class="loginBtn">LOGIN</a>
-          <button class="downloadBtn">
-            GET &nbsp; <i class="fa-brands fa-steam"></i>
-          </button>
+          <div class="content-container">
+            <div class="content-user">
+              <i class="ph-2x ph-user-square-fill"></i>
+              <span>userX</span>
+            </div>
+
+            <div class="content-divider">&nbsp;</div>
+
+            <div class="content-icon cart-icon">
+              <i class="ph-lg ph-shopping-cart-simple-fill"></i>
+            </div>
+
+            <div class="content-divider">&nbsp;</div>
+
+            <div class="content-icon">
+              <i class="ph-lg ph-magnifying-glass-bold"></i>
+            </div>
+            <button class="content-download-button">
+              Get &nbsp; <i class="lni lni-steam"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-mobile">
+        <div class="menu-content-container">
+          <div class="content-container">
+            <img class="content-logo" src="imgs/logo/steam-logo.png" alt="" />
+          </div>
+
+          <div class="content-container">
+            <div class="content-icon" onclick="openMenuSideNav()">
+              <i class="ph-lg ph-list-fill"></i>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -365,6 +429,7 @@
     </section>
 
     <script type="module" src="main.js"></script>
+    <script src="./js/header.js"></script>
     <script type="module" src="./js/special-offer.js"></script>
   </body>
 </html>
