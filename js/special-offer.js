@@ -11,13 +11,15 @@ export function displaySpecialOffers() {
   
             <h3 class="offer-title">${offer.offerTitle}</h3>
   
-            <div class="offer-sale-price">
-                <h3>${offer.dealOffer}%</h3>
-            </div>
-  
-            <div class="price">
-                <h3 class="old-price">R$${offer.actual_price}</h3>
-                <h3 class="new-price">R$${offer.old_price}</h3>
+            <div class="price-container">
+              <div class="offer-sale-price">
+                  <h3>${offer.dealOffer}%</h3>
+              </div>
+    
+              <div class="price">
+                  <h3 class="old-price">R$${offer.actual_price}</h3>
+                  <h3 class="new-price">R$${offer.old_price}</h3>
+              </div>
             </div>
   
         </div>

@@ -1,206 +1,223 @@
 .special-offers-section {
-    width: 100%;
-    height: 500px;
+  width: 100%;
+  height: 500px;
 
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    align-content: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  align-content: center;
 }
 
 .special-offers-container {
-    position: relative;
+  width: 1200px;
+  position: relative;
 }
 
 .special-offers-title {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
+  font-family: "muli";
+  font-weight: 600;
+  font-size: smaller;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    color: white;
+  color: white;
 }
 
 .special-offers {
-    width: 1200px;
-    height: 400px;
+  width: 100%;
+  height: 400px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    overflow: hidden;
-    flex-wrap: wrap;
+  overflow: hidden;
+  flex-wrap: wrap;
 }
 
 .offer {
-    width: 400px;
-    height: 400px;
+  width: 400px;
+  height: 400px;
 
-    margin-right: 20px;
+  margin-right: 20px;
 
-    position: relative;
+  position: relative;
 
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-
 .offer-detail {
-    width: 100%;
-    height: 100px;
+  width: 100%;
+  height: 100px;
 
-    display: flex;
-    align-items: center;
-    align-content: center;
-    position: absolute;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  position: absolute;
 
-    background-color: #231D23;
+  background-color: #231d23;
 }
 
 .offer-title {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
+  font-family: "muli";
+  font-weight: 800;
+  font-size: small;
 
-    margin-left: 20px;
+  margin-left: 20px;
 
-    color: #00AEEF;
+  color: #00aeef;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
 }
 
 .offer-sale-price {
-    width: 50px;
-    height: 40px;
+  width: 50px;
+  height: 40px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    position: absolute;
-    right: 90px;
+  position: absolute;
+  right: 100px;
 
-    background-color: #C1E45D;
+  background-color: #c1e45d;
 }
-
 .offer-sale-price h3 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    font-size: 15px;
+  font-family: "muli";
+  font-weight: 800;
+  font-size: medium;
 
-    color: black;
+  color: black;
 }
 
 .price {
-    height: 100%;
+  height: 100%;
 
-    position: absolute;
-    right: 20px;
+  position: absolute;
+  right: 20px;
 
-    text-align: right;
+  text-align: right;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
 .old-price {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
+  font-family: "muli";
+  font-weight: 400;
+  font-size: small;
 
-    text-decoration: line-through;
+  margin-bottom: 5px;
 
-    color: #6E6B6F;
+  text-decoration: line-through;
+
+  color: #6e6b6f;
 }
-
 .new-price {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+  font-family: "muli";
+  font-weight: 400;
+  font-size: large;
 
-    color: white;
+  color: white;
 }
-
-
-.offer-2-up-to {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-
-    position: absolute;
-    right: 80px;
-
-    color: #6E6B6F;
-}
-
-.offer-2-sale-price {
-    width: 50px;
-    height: 40px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-    right: 20px;
-
-    background-color: #C1E45D;
-}
-
-.offer-2-sale-price h3 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    font-size: 15px;
-
-    color: black;
-}
-
-
 
 .pass-offer-slide-button {
-    width: 100px;
-    height: 100%;
+  width: 100px;
+  height: 100%;
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 
-    position: absolute;
-    top: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
 
-    background-image: linear-gradient(to left, #2C252D 0, rgb(44, 37, 45, 0.6) 50%, rgb(44, 37, 45, 0) 100%);
+  background-image: linear-gradient(
+    to left,
+    #2c252d 0,
+    rgb(44, 37, 45, 0.6) 50%,
+    rgb(44, 37, 45, 0) 100%
+  );
 }
-
 .pass-offer-slide-button button {
-    width: 80px;
-    height: 70px;
+  width: 80px;
+  height: 70px;
 
-    margin-top: 0.5px;
+  margin-top: 0.5px;
 
-    border: 0;
+  border: 0;
 
-    font-size: 20px;
+  font-size: 20px;
 
-    transition: 0.3s;
+  transition: 0.3s;
 
-    color: #6E6B6F;
-    background-color: #231D23;
+  color: #6e6b6f;
+  background-color: #231d23;
+}
+.pass-offer-slide-button button:hover {
+  border: 3px;
+  border-style: solid;
+  border-color: #231d23;
+
+  transition: 0.3s;
+
+  color: #231d23;
+  background-color: white;
 }
 
-.pass-offer-slide-button button:hover {
-    border: 3px;
-    border-style: solid;
-    border-color: #231D23;
+@media (max-width: 1250px) {
+  .special-offers-container {
+    margin: 100px;
+  }
+}
 
-    transition: 0.3s;
+@media (max-width: 500px) {
+  .special-offers-container {
+    width: 100%;
+    margin: 20px;
+  }
 
-    color: #231D23;
-    background-color: white;
+  .offer {
+    width: 100%;
+
+    background-position: center -50px;
+  }
+
+  .offer-detail {
+    height: 150px;
+    padding: 20px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .offer-title {
+    margin-left: 0;
+  }
+
+  .price-container {
+    margin-top: 20px;
+  }
+  .offer-sale-price {
+    position: relative;
+    right: 0;
+  }
+  .price {
+    position: relative;
+    right: 0;
+    margin-left: 10px;
+    text-align: left;
+  }
 }
