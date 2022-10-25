@@ -6,10 +6,11 @@
 
     "review": "",
     "reviewIcon": "",
+    "reviewIconColor": "",
 
     "similarTo": "",
     "gameKeywords": [""],
-    "gameCategoryTypeIcon": "stars",
+    "gameCategoryTypeIcon": "ph-crown-simple-fill",
     "gameCategoryType": "Top Seller",
 
     "actual_price": "89,99",
@@ -23,7 +24,8 @@
     "name": "Bloodborne",
 
     "review": "Mostly Positive",
-    "reviewIcon": "mood",
+    "reviewIcon": "ph-smiley-meh",
+    "reviewIconColor": "#D2ED48",
 
     "similarTo": "",
     "gameKeywords": [""],
@@ -42,10 +44,11 @@
 
     "review": "",
     "reviewIcon": "",
+    "reviewIconColor": "",
 
     "similarTo": "",
     "gameKeywords": [""],
-    "gameCategoryTypeIcon": "trending_up",
+    "gameCategoryTypeIcon": "ph-trend-up-fill",
     "gameCategoryType": "Trending",
 
     "actual_price": "36,99",
@@ -59,7 +62,8 @@
     "name": "Dark Souls 2",
 
     "review": "Mostly Positive",
-    "reviewIcon": "mood",
+    "reviewIcon": "ph-smiley-meh",
+    "reviewIconColor": "#D2ED48",
 
     "similarTo": "",
     "gameKeywords": [""],
@@ -77,7 +81,8 @@
     "name": "Nier Automata",
 
     "review": "Very Positive",
-    "reviewIcon": "sentiment_very_satisfied",
+    "reviewIcon": "ph-smiley",
+    "reviewIconColor": "#3ACA8C",
 
     "similarTo": "",
     "gameKeywords": [""],
@@ -96,10 +101,11 @@
 
     "review": "",
     "reviewIcon": "",
+    "reviewIconColor": "",
 
     "similarTo": "",
     "gameKeywords": [""],
-    "gameCategoryTypeIcon": "military_tech",
+    "gameCategoryTypeIcon": "ph-medal-fill",
     "gameCategoryType": "Best Of",
 
     "actual_price": "349,90",
@@ -114,10 +120,11 @@
 
     "review": "",
     "reviewIcon": "",
+    "reviewIconColor": "",
 
     "similarTo": "",
     "gameKeywords": [""],
-    "gameCategoryTypeIcon": "military_tech",
+    "gameCategoryTypeIcon": "ph-medal-fill",
     "gameCategoryType": "Best Of",
 
     "actual_price": "20,69",
@@ -131,7 +138,8 @@
     "name": "The Legend of Zelda: Breath of the Wild",
 
     "review": "Positive",
-    "reviewIcon": "sentiment_satisfied",
+    "reviewIcon": "ph-smiley-blank",
+    "reviewIconColor": "#9BD550",
 
     "similarTo": "",
     "gameKeywords": [""],
