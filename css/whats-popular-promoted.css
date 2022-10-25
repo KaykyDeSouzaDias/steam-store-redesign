@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
-
 .whats-popular-and-promoted-section {
   width: 100%;
   height: 1000px;
@@ -20,11 +18,17 @@
   display: grid;
   grid-template-columns: auto 400px;
 }
-
 .whats-popular-title {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
+  font-family: "muli";
+  font-weight: 600;
+  font-size: smaller;
+
+  color: white;
+}
+.whats-popular-adsense-title {
+  font-family: "muli";
+  font-weight: 600;
+  font-size: smaller;
 
   color: white;
 }
@@ -38,7 +42,6 @@
   flex-direction: column;
   justify-content: center;
 }
-
 .popular-container {
   width: 100%;
   display: grid;
@@ -46,47 +49,25 @@
   grid-template-columns: auto 400px;
 }
 
-.popular-adsense {
-  position: relative;
-  display: flex;
-}
-
-.promoted-images {
-  width: 100%;
-  height: 250px;
-
-  margin-top: 10px;
-}
-.promoted-valve-images {
-  width: 100%;
-  height: 470px;
-
-  position: absolute;
-  bottom: 0;
-}
-
 .popular-tabs {
   height: 51px;
   border-bottom: 3px solid #6e6b6f;
 }
-
 .popular-tabs a {
-  font-family: "Lato", sans-serif;
+  font-family: "muli";
   font-weight: 700;
-  font-size: 16px;
+  font-size: medium;
 
   float: left;
   display: block;
   color: #6e6b6f;
-  padding: 14px 0px;
+  padding: 15px 0px;
   margin-right: 16px;
   text-decoration: none;
 }
-
 .popular-tabs a:hover {
   border-bottom: 4px solid #c1e45d;
 }
-
 .popular-tabs a.active {
   color: #c1e45d;
   border-bottom: 4px solid #c1e45d;
@@ -98,7 +79,6 @@
 
   position: relative;
 }
-
 .popular-games-container {
   display: flow-root;
 
@@ -121,24 +101,20 @@
 
   position: relative;
 }
-
 .popular-games-image {
   width: 100%;
   height: 4rem;
 }
 
-.popular-games-text {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-
-  color: white;
+.popular-games-detail {
+  display: flex;
+  align-items: center;
 }
 
 .popular-games-title {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+  font-family: "muli";
+  font-weight: 600;
+  font-size: large;
 
   padding-left: 20px;
 
@@ -154,39 +130,71 @@
   align-items: center;
   align-content: center;
 }
-
 .popular-games-keywords p {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
+  font-family: "muli";
+  font-weight: 800;
   padding: 5px;
-  font-size: 14px;
+  font-size: smaller;
+}
+.popular-games-keywords i {
+  font-size: xx-small;
+  color: #00aeef;
 }
 
-.popular-games button {
-  width: 110px;
-  height: 50px;
-
-  margin-left: 30px;
-
+.popular-games-offer {
   display: flex;
   align-items: center;
-  justify-content: center;
-
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 15px;
-
-  border: 2px #393c46;
-  border-radius: 5px;
-  border-style: solid;
-
-  background-color: #353841;
-  color: white;
+  justify-content: space-between;
 }
 
-.popular-games button i {
-  margin-top: 3px;
-  margin-left: 5px;
+.popular-sale-price {
+  width: 40px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: 95px;
+
+  background-color: #c1e45d;
+}
+.popular-sale-price h3 {
+  font-family: "muli";
+  font-weight: 800;
+  font-size: small;
+
+  color: black;
+}
+
+.popular-games-offer-price {
+  height: 100%;
+
+  position: absolute;
+  right: 20px;
+
+  text-align: right;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.popular-old-price {
+  font-family: "muli";
+  font-weight: 400;
+  font-size: small;
+
+  text-decoration: line-through;
+
+  color: #6e6b6f;
+}
+.popular-new-price {
+  font-family: "muli";
+  font-weight: 400;
+  font-size: medium;
+
+  color: white;
 }
 
 .popular-games-price {
@@ -201,11 +209,129 @@
   flex-direction: column;
   justify-content: center;
 }
-
 .popular-games-normal-price {
-  font-family: "Lato", sans-serif;
+  font-family: "muli";
   font-weight: 400;
-  font-size: 20px;
+  font-size: medium;
 
   color: white;
+}
+
+.popular-adsense {
+  position: relative;
+  display: flex;
+}
+.promoted-images {
+  width: 100%;
+  height: 250px;
+
+  margin-top: 10px;
+}
+.promoted-valve-images {
+  width: 100%;
+  height: 470px;
+
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 1250px) {
+  .popular {
+    width: 100%;
+  }
+  .popular-container {
+    grid-template-columns: auto;
+  }
+
+  .whats-popular-containers-titles {
+    grid-template-columns: auto;
+  }
+  .popular-games-title {
+    width: 180px;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .whats-popular-adsense-title {
+    display: none;
+  }
+
+  .popular-games-keywords {
+    display: none;
+  }
+
+  .popular-adsense {
+    display: none;
+    visibility: collapse;
+  }
+}
+
+@media (max-width: 500px) {
+  .whats-popular-container {
+    width: 100%;
+  }
+
+  .popular-tabs {
+    height: 48px;
+  }
+  .popular-tabs a {
+    font-size: small;
+
+    padding: 15px 0px;
+  }
+
+  .popular-games-detail {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .popular-games-title {
+    width: auto;
+
+    font-size: medium;
+  }
+
+  .popular-games-offer {
+    margin-top: 10px;
+  }
+
+  .popular-sale-price {
+    position: relative;
+    right: 0;
+    margin-left: 20px;
+  }
+
+  .popular-games-price {
+    text-align: left;
+
+    position: relative;
+    right: 0;
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  .popular-games-offer-price {
+    text-align: left;
+
+    position: relative;
+    right: 0;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .popular-tabs {
+    height: 46px;
+  }
+  .popular-tabs a {
+    font-weight: 800;
+    font-size: x-small;
+
+    padding: 15px 0px;
+  }
+
+  .popular-games-title {
+    width: 180px;
+  }
 }
