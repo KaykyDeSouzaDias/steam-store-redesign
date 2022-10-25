@@ -18,7 +18,7 @@ export function displayTopActionCategoriesGames() {
           <span class="material-symbols-outlined">
             ${actionGamesData[0].gameCategoryTypeIcon}
           </span>
-          <p class="top-seller-txt">${actionGamesData[0].gameCategoryType}</p>
+          <p>${actionGamesData[0].gameCategoryType}</p>
         </div>
 
         <div class="top-categories-game-price">
@@ -41,7 +41,7 @@ export function displayTopActionCategoriesGames() {
               <span class="material-symbols-outlined">
                 ${action.gameCategoryTypeIcon}
               </span>
-              <p class="top-seller-txt">${action.gameCategoryType}</p>
+              <p>${action.gameCategoryType}</p>
             </div>
 
             ${
@@ -58,7 +58,11 @@ export function displayTopActionCategoriesGames() {
                 `
                 : `
                   <div class="top-categories-game-price">
-                    <h3 class="top-categories-game-normal-price">R$${action.actual_price}</h3>
+                    <h3 class="top-categories-game-normal-price">${
+                      action.actual_price === "Free"
+                        ? `${action.actual_price}`
+                        : `R$${action.actual_price}`
+                    }</h3>
                   </div>
                 `
             }
@@ -99,7 +103,7 @@ export function displayTopFightingCategoriesGames() {
           <span class="material-symbols-outlined">
             ${fightingGamesData[0].gameCategoryTypeIcon}
           </span>
-          <p class="top-seller-txt">${fightingGamesData[0].gameCategoryType}</p>
+          <p>${fightingGamesData[0].gameCategoryType}</p>
         </div>
 
         <div class="top-categories-game-price">
@@ -124,7 +128,7 @@ export function displayTopFightingCategoriesGames() {
               <span class="material-symbols-outlined">
                 ${fighting.gameCategoryTypeIcon}
               </span>
-              <p class="top-seller-txt">${fighting.gameCategoryType}</p>
+              <p>${fighting.gameCategoryType}</p>
             </div>
 
             ${
@@ -141,7 +145,11 @@ export function displayTopFightingCategoriesGames() {
                 `
                 : `
                   <div class="top-categories-game-price">
-                    <h3 class="top-categories-game-normal-price">R$${fighting.actual_price}</h3>
+                    <h3 class="top-categories-game-normal-price">${
+                      fighting.actual_price === "Free"
+                        ? `${fighting.actual_price}`
+                        : `R$${fighting.actual_price}`
+                    }</h3>
                   </div>
                 `
             }
@@ -182,7 +190,7 @@ export function displayTopOpenWorldCategoriesGames() {
           <span class="material-symbols-outlined">
             ${openWorldGamesData[0].gameCategoryTypeIcon}
           </span>
-          <p class="top-seller-txt">${openWorldGamesData[0].gameCategoryType}</p>
+          <p>${openWorldGamesData[0].gameCategoryType}</p>
         </div>
 
         <div class="top-categories-game-price">
@@ -203,31 +211,35 @@ export function displayTopOpenWorldCategoriesGames() {
           }" class="small-top-categories-games">
             <div class="top-categories-game-details">
 
-            <div class="category-type">
-              <span class="material-symbols-outlined">
-                ${openWorld.gameCategoryTypeIcon}
-              </span>
-              <p class="top-seller-txt">${openWorld.gameCategoryType}</p>
-            </div>
+              <div class="category-type">
+                <span class="material-symbols-outlined">
+                  ${openWorld.gameCategoryTypeIcon}
+                </span>
+                <p>${openWorld.gameCategoryType}</p>
+              </div>
 
-            ${
-              openWorld.isInOffer
-                ? `
-                  <div class="top-categories-game-sale-price">
-                    <h3>${openWorld.dealOffer}%</h3>
-                  </div>
+              ${
+                openWorld.isInOffer
+                  ? `
+                    <div class="top-categories-game-sale-price">
+                      <h3>${openWorld.dealOffer}%</h3>
+                    </div>
 
-                  <div class="top-categories-game-price">
-                    <h3 class="top-categories-game-old-price">R$${openWorld.old_price}</h3>
-                    <h3 class="top-categories-game-new-price">R$${openWorld.actual_price}</h3>
-                  </div>
-                `
-                : `
-                  <div class="top-categories-game-price">
-                    <h3 class="top-categories-game-normal-price">R$${openWorld.actual_price}</h3>
-                  </div>
-                `
-            }
+                    <div class="top-categories-game-price">
+                      <h3 class="top-categories-game-old-price">R$${openWorld.old_price}</h3>
+                      <h3 class="top-categories-game-new-price">R$${openWorld.actual_price}</h3>
+                    </div>
+                  `
+                  : `
+                    <div class="top-categories-game-price">
+                      <h3 class="top-categories-game-normal-price">${
+                        openWorld.actual_price === "Free"
+                          ? `${openWorld.actual_price}`
+                          : `R$${openWorld.actual_price}`
+                      }</h3>
+                    </div>
+                  `
+              }
             </div>
           </div>
             `;
