@@ -16,6 +16,20 @@
   background-position: center center;
 }
 
+.watch-game-trailers-container {
+  position: relative;
+}
+
+.watch-game-trailers-title {
+  font-family: "muli";
+  font-weight: 600;
+  font-size: smaller;
+
+  margin-bottom: 20px;
+
+  color: white;
+}
+
 .game-trailer-container {
   width: 1100px;
   height: 700px;
@@ -63,25 +77,39 @@
   display: flex;
 }
 
-.main-detail-video-progress-background {
-  width: 100%;
-  height: 5px;
-
-  position: absolute;
-  bottom: 100px;
-
-  background-color: #6e6b6f;
-}
-.main-detail-video-progress {
-  width: 70%;
-  height: 5px;
-
-  background-color: #00aeef;
-}
-
 .main-detail-image {
   width: 100%;
   height: 6.5rem;
+}
+
+.watch-game-trailer-game-title {
+  font-family: "muli";
+  font-weight: 600;
+  font-size: large;
+
+  padding-left: 20px;
+
+  color: white;
+}
+
+.watch-game-trailer-game-keywords {
+  padding-left: 15px;
+
+  color: #6e6b6f;
+
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.watch-game-trailer-game-keywords p {
+  font-family: "muli";
+  font-weight: 800;
+  font-size: smaller;
+  padding: 5px;
+}
+.watch-game-trailer-game-keywords i {
+  font-size: xx-small;
+  color: #00aeef;
 }
 
 .main-detail-store-content {
@@ -99,14 +127,18 @@
 
 .main-detail-game-buy {
   width: 80px;
-  height: 50px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   border: none;
   border-radius: 5px;
 
   margin-right: 8px;
 
-  font-size: 24px;
+  font-size: x-large;
 
   color: #6e6b6f;
   background-color: #2c252d;
@@ -114,14 +146,18 @@
 
 .main-detail-game-wishlist {
   width: 45px;
-  height: 50px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   border: none;
   border-radius: 5px;
 
   margin-right: 8px;
 
-  font-size: 24px;
+  font-size: x-large;
 
   color: #6e6b6f;
   background-color: #2c252d;
@@ -137,9 +173,9 @@
   justify-content: center;
 }
 .main-detail-game-normal-price {
-  font-family: "Lato", sans-serif;
+  font-family: "muli";
   font-weight: 400;
-  font-size: 20px;
+  font-size: medium;
 
   color: white;
 }
@@ -156,13 +192,36 @@
   color: #b5b3b4;
 }
 .video-time-and-icon {
-  font-family: "Lato", sans-serif;
+  font-family: "muli";
   font-weight: 400;
-  font-size: 15px;
+  font-size: smaller;
 
   padding-right: 10px;
 
   color: #b5b3b4;
+}
+.main-detail-video-info i {
+  font-family: "muli";
+  font-weight: 400;
+  font-size: larger;
+
+  color: #b5b3b4;
+}
+
+.main-detail-video-progress-background {
+  width: 100%;
+  height: 5px;
+
+  position: absolute;
+  bottom: 100px;
+
+  background-color: #6e6b6f;
+}
+.main-detail-video-progress {
+  width: 70%;
+  height: 5px;
+
+  background-color: #00aeef;
 }
 
 .watch-game-trailers-detail {
@@ -181,25 +240,25 @@
 
 .game-trailer-similar {
   display: flex;
-  flex-direction: column;
+  align-items: center;
 
   margin: 5px;
 }
-
 .game-trailer-similar p {
-  font-family: "Lato", sans-serif;
+  font-family: "muli";
   font-weight: 400;
-  font-size: 12px;
+  font-size: x-small;
 
   color: #6e6b6f;
 }
-
 .game-trailer-similar h3 {
   width: 120px;
 
-  font-family: "Lato", sans-serif;
+  margin-top: 10px;
+
+  font-family: "muli";
   font-weight: 900;
-  font-size: 15px;
+  font-size: smaller;
 
   color: #6e6b6f;
 }
@@ -225,15 +284,17 @@
   border: none;
   border-radius: 5px;
 
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-size: 12px;
+  font-family: "muli";
+  font-weight: 800;
+  font-size: smaller;
 
-  background-color: #2a2c38;
+  background-color: #2c252d;
   color: #6e6b6f;
 }
-.more-like-this-button span {
-  font-size: 12px;
+.more-like-this-button i {
+  font-size: small;
+  margin-bottom: 1px;
+
   color: #6e6b6f;
 }
 
@@ -241,14 +302,81 @@
   display: flex;
   align-items: center;
 
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   padding-right: 20px;
   padding-left: 20px;
 
   border: none;
   border-radius: 5px;
 
+  font-size: medium;
+
   color: white;
   background-color: #00aeef;
+}
+
+@media (max-width: 1250px) {
+  .watch-game-trailers-container {
+    width: 100%;
+  }
+  .game-trailer-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 990px) {
+  .watch-game-trailers-section {
+    padding: 20px;
+  }
+
+  .watch-game-trailers-main-detail {
+    padding-bottom: 170px;
+  }
+
+  .main-detail-video-progress-background {
+    bottom: 150px;
+  }
+
+  .watch-game-trailers-detail {
+    flex-direction: column;
+    height: 150px;
+  }
+  .details-buttons {
+    justify-content: center;
+
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .watch-game-trailers-main-detail {
+    padding-bottom: 120px;
+  }
+
+  .main-detail-video-progress-background {
+    bottom: 100px;
+  }
+
+  .main-detail-image {
+    display: none;
+  }
+
+  .watch-game-trailers-detail {
+    flex-direction: column;
+    height: 100px;
+  }
+
+  .game-trailer-similar {
+    display: none;
+  }
+  .details-buttons {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-detail-video-info {
+    display: none;
+  }
 }

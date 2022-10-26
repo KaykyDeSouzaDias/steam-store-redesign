@@ -14,9 +14,11 @@ export function displayWatchGameTrailer() {
                     <div>
                         <img class="main-detail-image" src="./imgs/backgrounds/watch-game-trailer/bayonetta-2.jpg" alt="">
                     </div>
-                    <div class="main-detail-text">
-                        <h1 class="popular-games-title">${game.name}</h1>
-                        <div class="popular-games-keywords">
+                    <div>
+                        <h1 class="watch-game-trailer-game-title">${
+                          game.name
+                        }</h1>
+                        <div class="watch-game-trailer-game-keywords">
                             ${game.gameKeywords
                               .map((key, index) => {
                                 if (index === 3) {
@@ -26,7 +28,7 @@ export function displayWatchGameTrailer() {
                                 } else {
                                   return `
                                     <p id="slider-keyword-1">${key}</p>
-                                    <i class="fa-solid fa-circle"></i>
+                                    <i class="ph-circle-fill"></i>
                                 `;
                                 }
                               })
@@ -34,10 +36,10 @@ export function displayWatchGameTrailer() {
                         </div>
                         <div class="main-detail-store-content">
                             <button class="main-detail-game-buy">
-                                <i class="fa-solid fa-basket-shopping"></i>
+                                <i class="ph-shopping-bag-open-fill"></i>
                             </button>
                             <button class="main-detail-game-wishlist">
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="ph-heart-fill"></i>
                             </button>
                             <div class="main-detail-game-price">
                             <h3 class="main-detail-game-normal-price">${
@@ -48,9 +50,7 @@ export function displayWatchGameTrailer() {
                             </div>
                             <div class="main-detail-video-info">
                                 <h3 class="video-time-and-icon">1:42</h3>
-                                <span class="material-symbols-outlined">
-                                    volume_up
-                                </span>
+                                <i class="ph-speaker-high-fill"></i>
                             </div>
                         </div>
                     </div>
@@ -62,36 +62,34 @@ export function displayWatchGameTrailer() {
         </div>
         <div class="watch-game-trailers-detail">
             <div class="game-trailer-similar">
-                <p>Reviews</p>
-                <h3>${game.review}</h3>
-            </div>
-            <div class="game-trailer-similar">
-                <p>Release Date</p>
-                <h3>${game.releaseDate}</h3>
-            </div>
-            <div class="game-trailer-similar">
-                <p>Developer</p>
-                <h3>${game.developer}</h3>
-            </div>
-            <div class="game-trailer-similar">
-                <p>Publisher</p>
-                <h3>${game.publisher}</h3>
-            </div>
-            <div class="game-trailer-similar">
-                <p>Platforms</p>
-                <h3>${game.platforms.map((platform) => platform)}</h3>
+                <div>
+                    <p>Reviews</p>
+                    <h3>${game.review}</h3>
+                </div>
+                <div>
+                    <p>Release Date</p>
+                    <h3>${game.releaseDate}</h3>
+                </div>
+                <div>
+                    <p>Developer</p>
+                    <h3>${game.developer}</h3>
+                </div>
+                <div>
+                    <p>Publisher</p>
+                    <h3>${game.publisher}</h3>
+                </div>
+                <div>
+                    <p>Platforms</p>
+                    <h3>${game.platforms.map((platform) => platform)}</h3>
+                </div>
             </div>
 
             <div class="details-buttons">
                 <button class="more-like-this-button">
-                    More like this &nbsp; <span class="material-symbols-outlined">
-                    thumb_up
-                    </span>
+                    More like this &nbsp; <i class="ph-thumbs-up-fill"></i>
                 </button>
                 <button class="next-button">
-                    <span class="material-symbols-outlined">
-                        skip_next
-                    </span>
+                    <i class="ph-skip-forward-fill"></i>
                 </button>
             </div>
         </div>
