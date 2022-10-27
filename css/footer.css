@@ -1,5 +1,6 @@
 .footer-section {
   width: 100%;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -7,6 +8,12 @@
   align-self: center;
   align-items: center;
   align-content: center;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3)
+  );
 
   padding: 50px;
 }
@@ -32,15 +39,15 @@
   margin-bottom: 50px;
 }
 .footer-header-container h1 {
-  font-family: "muli", sans-serif;
+  font-family: "muli";
   font-weight: 400;
-  font-size: 30px;
+  font-size: x-large;
 
   margin-right: 10px;
 
   color: white;
 }
-.footer-header-container span {
+.footer-header-container i {
   font-size: 40px;
 
   color: white;
@@ -54,6 +61,7 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .footer-content-header {
   width: 400px;
   display: grid;
@@ -63,9 +71,9 @@
   margin-bottom: 40px;
 }
 .footer-content-header h2 {
-  font-family: "muli", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
+  font-family: "muli";
+  font-weight: 800;
+  font-size: small;
 
   line-height: 20px;
 
@@ -74,20 +82,28 @@
 
 .footer-content-logos {
   display: flex;
+  justify-content: space-between;
 
   text-align: left;
 }
-.footer-content-logos img {
+
+.content-logo-left {
+  display: flex;
+  align-items: center;
+}
+.content-logo-left img {
   height: 2rem;
   margin-right: 10px;
 
   filter: invert(46%) sepia(5%) saturate(278%) hue-rotate(240deg)
     brightness(87%) contrast(84%);
 }
-.footer-content-logos p {
-  font-family: muli, sans-serif;
+.content-logo-left p {
+  width: 400px;
+
+  font-family: "muli";
   font-weight: 400;
-  font-size: 12px;
+  font-size: x-small;
 
   margin-right: 20px;
 
@@ -102,6 +118,8 @@
   width: auto;
   height: 32px;
 
+  margin-right: 10px;
+
   filter: invert(46%) sepia(5%) saturate(278%) hue-rotate(240deg)
     brightness(87%) contrast(84%);
 }
@@ -110,7 +128,52 @@
 
   color: #6e6b6f;
 }
+
 .fa-facebook {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+@media (max-width: 1250px) {
+  .footer-container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer-content-header {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .content-logo-left p {
+    width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 20px;
+  }
+
+  .footer-content-logos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-logo-left {
+    flex-direction: column;
+    text-align: center;
+  }
+  .content-logo-left p {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .content-logo-right {
+    margin-top: 20px;
+  }
 }
