@@ -63,7 +63,7 @@
 
 .offer:hover .offer-overlay {
   opacity: 1;
-  transform: translateY(-60px);
+  transform: translateY(-80px);
 }
 
 .offer:hover .offer-detail {
@@ -107,11 +107,11 @@
   display: flex;
   flex-direction: column;
 
-  /* padding-top: 10px; */
   padding-left: 20px;
+  padding-right: 20px;
 
   position: absolute;
-  bottom: 40px;
+  bottom: 10px;
 }
 
 .overlay-offer-title {
@@ -126,18 +126,19 @@
 
 .offer-header-overlay-game-title {
   font-family: "muli";
-  font-weight: 600;
-  font-size: small;
+  font-weight: 700;
+  font-size: medium;
 
   color: white;
 }
 
 .offer-header-overlay-game-keywords {
-  /* width: 100%; */
-
   display: flex;
   align-items: center;
   align-content: center;
+
+  margin-top: 10px;
+  margin-bottom: 20px;
 
   color: #6e6b6f;
 }
@@ -163,7 +164,7 @@
   align-content: center;
   position: absolute;
 
-  bottom: -30px;
+  bottom: -50px;
 }
 
 .offer-buy {

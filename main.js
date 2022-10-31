@@ -42,3 +42,14 @@ displayValueGamesAndHotDeals();
 setHotDeals_BackgroundImage();
 
 displayWatchGameTrailer();
+
+const specialOfferTrailer = document.querySelector(".offer-overlay-trailer");
+const specialOfferPricesContainer = document.querySelector(".offer-overlay");
+
+specialOfferPricesContainer.addEventListener("mouseenter", function (e) {
+  specialOfferTrailer.muted = true;
+  specialOfferTrailer.play();
+});
+specialOfferPricesContainer.addEventListener("mouseout", function (e) {
+  specialOfferTrailer.pause();
+});

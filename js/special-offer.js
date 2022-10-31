@@ -26,8 +26,8 @@ export function displaySpecialOffers() {
           </div>
           <div class="offer-overlay">
 
-            <video width="100%" height="250" class="offer-overlay-trailer" autoplay loop>
-              <source src="../videos/special-offers/forza-horizon-5.mp4" type="video/mp4">
+            <video width="100%" height="250" id="offer-trailer" class="offer-overlay-trailer" loop>
+              <source src="/videos/special-offers/forza-horizon-5.mp4" type="video/mp4">
             </video>
 
             <div class="offer-header-overlay-content">
@@ -55,6 +55,14 @@ export function displaySpecialOffers() {
                       .join("")}
                 </div>
               </div>
+
+              <hr
+                style="
+                  width: 100%;
+                  border: 0;
+                  border-top: 0.5px solid rgba(110, 107, 111, 0.3);
+                "
+              />
 
             </div>
 
