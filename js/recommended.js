@@ -43,8 +43,8 @@ export function displayRecommended() {
 
             <div class="recommended-overlay-trailer">
               <div class="recommended-overlay-shadow"></div>
-              <video width="100%" height="250" class="recommended-overlay-trailer" autoplay loop>
-                <source src="../videos/recommended-games/the-witcher-3.mp4" type="video/mp4">
+              <video width="100%" height="250" id="recommended-trailer" class="recommended-overlay-trailer" loop>
+                <source src="/videos/recommended-games/the-witcher-3.mp4" type="video/mp4">
               </video>
             </div>
 

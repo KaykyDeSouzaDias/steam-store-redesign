@@ -53,3 +53,27 @@ specialOfferPricesContainer.addEventListener("mouseenter", function (e) {
 specialOfferPricesContainer.addEventListener("mouseout", function (e) {
   specialOfferTrailer.pause();
 });
+
+const recommendedTrailer = document.querySelector("#recommended-trailer");
+const recommendedPricesContainer = document.querySelector(
+  ".recommended-games-detail-overlay"
+);
+const recommendedTitleContainer = document.querySelector(
+  ".recommended-header-overlay-content"
+);
+
+recommendedPricesContainer.addEventListener("mouseenter", function (e) {
+  recommendedTrailer.muted = true;
+  recommendedTrailer.play();
+});
+recommendedPricesContainer.addEventListener("mouseout", function (e) {
+  recommendedTrailer.pause();
+});
+
+recommendedTitleContainer.addEventListener("mouseenter", function (e) {
+  recommendedTrailer.muted = true;
+  recommendedTrailer.play();
+});
+recommendedTitleContainer.addEventListener("mouseout", function (e) {
+  recommendedTrailer.pause();
+});
