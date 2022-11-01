@@ -12,7 +12,9 @@ export function displayTopActionCategoriesGames() {
   let smallGames = "";
 
   let bigGame = `
-    <div id="action-game-${actionGamesData[0].id}" class="big-top-categories-games">
+    <div id="action-game-${
+      actionGamesData[0].id
+    }" class="big-top-categories-games">
       <div class="top-categories-game-details">
         <div class="category-type">
           <span class="material-symbols-outlined">
@@ -22,7 +24,85 @@ export function displayTopActionCategoriesGames() {
         </div>
 
         <div class="top-categories-game-price">
-          <h3 class="top-categories-game-normal-price">R$${actionGamesData[0].actual_price}</h3>
+          <h3 class="top-categories-game-normal-price">R$${
+            actionGamesData[0].actual_price
+          }</h3>
+        </div>
+      </div>
+      <div class="recommended-overlay">
+
+        <div class="recommended-overlay-trailer">
+          <div class="recommended-overlay-shadow"></div>
+          <video width="100%" height="100%" id="category-trailer" loop>
+            <source src="/videos/your-top-categories/call-of-duty-vanguard.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="top-categories-header-overlay-content">
+
+          <div>
+            <h1 class="header-overlay-game-title">${
+              actionGamesData[0].name
+            }</h1>
+            <div class="header-overlay-game-keywords">
+                ${actionGamesData[0].gameKeywords
+                  .map((key, index) => {
+                    if (index === 2) {
+                      return `
+                        <p id="slider-keyword-1">${key}</p>
+                    `;
+                    } else if (index === 3) {
+                      return ``;
+                    } else {
+                      return `
+                        <p id="slider-keyword-1">${key}</p>
+                        <i class="ph-circle-fill"></i>
+                    `;
+                    }
+                  })
+                  .join("")}
+            </div>
+          </div>
+
+          <div class="category-overlay-game-icon-review">
+            <i class="ph-smiley"></i>
+            <span>Very Positive</span>
+          </div>
+
+        </div>
+
+        <div class="top-categories-games-detail-overlay">
+
+          <button class="recommended-buy">
+            <i class="ph-shopping-bag-open-fill"></i>
+          </button>
+          <button class="recommended-wishlist">
+            <i class="ph-heart-fill"></i>
+          </button>
+
+          ${
+            actionGamesData[0].isInOffer
+              ? `
+              <div class="recommended-sale-price">
+                <h3>${actionGamesData[0].dealOffer}%</h3>
+              </div>
+
+              <div class="recommended-games-price">
+                <h3 class="recommended-old-price">R$${actionGamesData[0].old_price}</h3>
+                <h3 class="recommended-new-price">R$${actionGamesData[0].actual_price}</h3>
+              </div>
+            `
+              : `
+                <div class="recommended-games-price">
+                  <h3 class="recommended-normal-price">${
+                    actionGamesData[0].actual_price === "Free"
+                      ? `${actionGamesData[0].actual_price}`
+                      : `R$${actionGamesData[0].actual_price}`
+                  }</h3>
+                </div>
+              `
+          }
+
         </div>
       </div>
     </div>
