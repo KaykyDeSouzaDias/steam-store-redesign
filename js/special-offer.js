@@ -26,7 +26,7 @@ export function displaySpecialOffers() {
           </div>
           <div class="offer-overlay">
 
-            <video width="100%" height="250" id="offer-trailer" class="offer-overlay-trailer" loop>
+            <video width="100%" height="100%" id="offer-trailer" class="offer-overlay-trailer" loop>
               <source src="/videos/special-offers/forza-horizon-5.mp4" type="video/mp4">
             </video>
 
