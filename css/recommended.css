@@ -98,9 +98,7 @@
   display: flex;
   align-items: flex-end;
 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center -10px;
+  overflow: hidden;
 
   opacity: 0;
 
@@ -111,7 +109,9 @@
   width: 100%;
   height: 100%;
 
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+
+  background-color: black;
 }
 .recommended-overlay-shadow {
   width: 100%;
@@ -400,6 +400,26 @@
 }
 
 @media (max-width: 630px) {
+  .recommended-games:hover {
+    z-index: 0;
+    transform: scale(1);
+  }
+  .recommended-games:hover .recommended-new-price {
+    font-size: medium;
+  }
+  .recommended-games:hover .recommended-old-price {
+    font-size: small;
+  }
+  .recommended-games:hover .recommended-sale-price {
+    width: 40px;
+    height: 30px;
+
+    right: 95px;
+  }
+  .recommended-games:hover .recommended-sale-price h3 {
+    font-size: small;
+  }
+
   .recommended-container {
     width: 100%;
     margin: 20px;
