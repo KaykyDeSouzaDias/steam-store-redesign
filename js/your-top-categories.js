@@ -29,10 +29,10 @@ export function displayTopActionCategoriesGames() {
           }</h3>
         </div>
       </div>
-      <div class="recommended-overlay">
+      <div class="top-categories-overlay">
 
-        <div class="recommended-overlay-trailer">
-          <div class="recommended-overlay-shadow"></div>
+        <div class="top-categories-overlay-trailer">
+          <div class="top-categories-overlay-shadow"></div>
           <video width="100%" height="100%" id="category-trailer" loop>
             <source src="/videos/your-top-categories/call-of-duty-vanguard.mp4" type="video/mp4">
           </video>
@@ -73,28 +73,28 @@ export function displayTopActionCategoriesGames() {
 
         <div class="top-categories-games-detail-overlay">
 
-          <button class="recommended-buy">
+          <button class="top-categories-buy">
             <i class="ph-shopping-bag-open-fill"></i>
           </button>
-          <button class="recommended-wishlist">
+          <button class="top-categories-wishlist">
             <i class="ph-heart-fill"></i>
           </button>
 
           ${
             actionGamesData[0].isInOffer
               ? `
-              <div class="recommended-sale-price">
+              <div class="top-categories-game-sale-price">
                 <h3>${actionGamesData[0].dealOffer}%</h3>
               </div>
 
-              <div class="recommended-games-price">
-                <h3 class="recommended-old-price">R$${actionGamesData[0].old_price}</h3>
-                <h3 class="recommended-new-price">R$${actionGamesData[0].actual_price}</h3>
+              <div class="top-categories-game-price">
+                <h3 class="top-categories-game-old-price">R$${actionGamesData[0].old_price}</h3>
+                <h3 class="top-categories-game-new-price">R$${actionGamesData[0].actual_price}</h3>
               </div>
             `
               : `
-                <div class="recommended-games-price">
-                  <h3 class="recommended-normal-price">${
+                <div class="top-categories-game-price">
+                  <h3 class="top-categories-game-normal-price">${
                     actionGamesData[0].actual_price === "Free"
                       ? `${actionGamesData[0].actual_price}`
                       : `R$${actionGamesData[0].actual_price}`
