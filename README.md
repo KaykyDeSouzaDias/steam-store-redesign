@@ -38,9 +38,9 @@ The real challenge was to keep the project code as clean as possible to make som
 
 |  |
 | --- |
-| ![](https://user-images.githubusercontent.com/59856984/179417911-7306f0e5-0529-48d1-9661-52814b32aa87.jpg) |
-| ![](https://user-images.githubusercontent.com/59856984/179417914-d983eb43-91eb-4bdd-ae45-7d5db4596065.jpg) |
-| ![](https://user-images.githubusercontent.com/59856984/179417920-dc98390f-dcd9-4af4-9a18-f19657c8535c.jpg) |
+| ![](https://github.com/KaykyDeSouzaDias/steam-store-redesign-clone/blob/master/imgs/readme/responsivity-mockup.jpg) |
+| ![](https://github.com/KaykyDeSouzaDias/steam-store-redesign-clone/blob/master/imgs/readme/responsivity-mobile-mockup.jpg) |
+| ![](https://github.com/KaykyDeSouzaDias/steam-store-redesign-clone/blob/master/imgs/readme/responsivity-desktopApple-mockup.jpg) |
 
 # Development
 
